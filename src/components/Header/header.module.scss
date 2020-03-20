@@ -1,0 +1,11 @@
+@import '../../assets/scss/MainColors.scss';
+header {
+    background: $backgroundColor;
+    margin-bottom: 1.45rem;
+}
+
+.header__item {
+    color: #fff;
+    padding: 0 20px;
+    text-decoration: none;
+}
