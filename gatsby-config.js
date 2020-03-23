@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Brilliant Car`,
-    description: `Brilliant Car Studio Detailingu`,
+    description: `Brilliant Car - Studio Detailingu`,
     author: `TimeForIT`,
   },
   plugins: [

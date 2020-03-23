@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import Logo from "../../assets/images/logo.svg";
+import Logo from "../../../assets/images/logo.svg"
 import style from './header.module.scss'
 
 const Header = () => (
