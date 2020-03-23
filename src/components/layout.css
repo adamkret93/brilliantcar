@@ -1,12 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap&subset=latin-ext');
+
 html {
-  font-family: sans-serif;
+  box-sizing: border-box;
+  overflow-y: scroll;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
+  background-color: #141521;
+  color: #fff;
+  font: normal 14px 'Montserrat', sans-serif;
+  word-wrap: break-word;
+  font-kerning: normal;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
 }
 article,
 aside,
@@ -184,11 +196,6 @@ textarea {
   -webkit-appearance: button;
   font: inherit;
 }
-html {
-  font: 112.5%/1.45em georgia, serif;
-  box-sizing: border-box;
-  overflow-y: scroll;
-}
 * {
   box-sizing: inherit;
 }
@@ -198,27 +205,17 @@ html {
 *:after {
   box-sizing: inherit;
 }
-body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
-  font-weight: normal;
-  word-wrap: break-word;
-  font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
-}
+
 img {
   max-width: 100%;
-  margin-left: 0;
+  /* margin-left: 0;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1.45rem; */
 }
 h1 {
   margin-left: 0;

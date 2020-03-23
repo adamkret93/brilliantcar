@@ -12,7 +12,7 @@ class Page3 extends Component {
         
         return(
             <Layout>
-                <SEO title="Home" />
+                <SEO title="Kontakt" />
                 <p>This is third page.</p>
                 
             </Layout>

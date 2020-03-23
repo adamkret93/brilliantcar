@@ -1,11 +1,40 @@
-@import '../../assets/scss/MainColors.scss';
+@import '../../assets/scss/style.scss';
 header {
+    position: -webkit-sticky;
+    position: sticky; top:0;
     background: $backgroundColor;
-    margin-bottom: 1.45rem;
-}
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255,0.6);
+    z-index: 100;
 
+    .container {
+        display: flex; 
+        justify-content: center;
+    }
+}
+.header__wrapper {
+    display: flex; 
+    justify-content: space-around;
+}
+.header__wrapper-left,
+.header__wrapper-right { width: calc(50% - 65px); }
 .header__item {
+    display: block;
     color: #fff;
+    font-size: 15px;
+    font-weight: 600;
     padding: 0 20px;
     text-decoration: none;
+    line-height: 55px;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+
+    &:hover { border-color: #FF9F00; }
+}
+.header__logo {
+    position: relative;
+    min-width: 130px;
+    border: 0;
+
+    img { position: absolute; }
 }
