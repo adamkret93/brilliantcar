@@ -1,0 +1,44 @@
+@import '../../assets/scss/style.scss';
+
+footer {
+    padding: 30px 0;
+    border-top: 1px solid $goldColor;
+}
+
+.contact-data {
+    display: flex;
+    margin-bottom: 20px;
+}
+.contact-data__item {
+    width: 33.33333%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        max-height: 50px;
+        margin-right: 25px;
+    }
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {  text-decoration: underline; }
+    }
+
+}
+.hours {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    p { margin-bottom: 10px; }
+}
+.created { 
+    a { color: #fff; }
+}
