@@ -35,23 +35,31 @@ const Layout = ({ children }) => {
         <div className="container">
           <div className={style.contactData}>
             <div className={style.contactData__item}>
-              <img src={Location} />
-              <a href="https://g.page/brilliantcarstudiodetailingu?share">ul. Jurajska 20,<br/>32-085 Modlnica</a>
+              <a href="https://g.page/brilliantcarstudiodetailingu?share">
+                <img src={Location} alt="location"/>
+                ul. Jurajska 20,<br/>32-085 Modlnica
+              </a>
             </div>
             <div className={style.contactData__item}>
-              <img src={Tel}/>
-              <a href="tel:+48 721 000 010">+48 721 000 010</a>
+              <a href="tel:+48 721 000 010">
+                <img src={Tel} alt="telphone"/>
+                +48 721 000 010
+              </a>
             </div>
             <div className={style.contactData__item}>
-              <img src={Email}/>
-              <a href="mailto:brilliantcarstudio@gmail.com">brilliantcarstudio@gmail.com</a>
-            </div>
+              <a href="mailto:brilliantcarstudio@gmail.com">
+                <img src={Email} alt="e-mail"/>
+                brilliantcarstudio@gmail.com
+              </a>
+            </div> 
           </div>
-          <div className={style.hours}>
-            Poniedziałek - Piątek 9:00 - 17:00
+          <p className={style.hours}>Poniedziałek - Piątek 9:00 - 17:00</p>
+          <div className={style.copyright}>
+            <p>{new Date().getFullYear()} © Wszystkie prawa zastrzeżone</p>
+            <p>Kopiowanie i wykorzystywanie zdjęć produktów bez zgody autora zabronione.<br/> 
+              Strona korzysta z informacji przechowywanych w plikach cookies w celach funkcjonalnych oraz statystycznych.</p>
           </div>
-          © {new Date().getFullYear()} Wszystkie prawa zastrzeżone
-          <a href="https://www.gatsbyjs.org">{data.site.siteMetadata.author}</a>
+          <p className={style.created}>Created by <a href="mailto:adamkret93@gmail.com">{data.site.siteMetadata.author}</a></p>
         </div>
       </footer>
     </>

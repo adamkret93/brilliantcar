@@ -7,6 +7,7 @@ footer {
 
 .contact-data {
     display: flex;
+    margin-bottom: 20px;
 }
 .contact-data__item {
     width: 33.33333%;
@@ -18,12 +19,25 @@ footer {
         max-height: 50px;
         margin-right: 25px;
     }
-
     a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: #fff;
         text-decoration: none;
+
+        &:hover {  text-decoration: underline; }
     }
+
 }
 .hours {
     text-align: center;
+    margin-bottom: 20px;
+}
+.copyright {
+    text-align: center;
+    p { margin-bottom: 10px; }
+}
+.created { 
+    a { color: #fff; }
 }
