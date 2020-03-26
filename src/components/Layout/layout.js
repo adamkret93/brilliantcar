@@ -20,6 +20,7 @@ const Layout = ({ children }) => {
         siteMetadata {
           title
           author
+          author_email
         }
       }
     }
@@ -28,38 +29,38 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header/>
-      <div className='container'>
+      <div>
         <main>{children}</main>
       </div>
       <footer className={style.footer}>
         <div className="container">
           <div className={style.contactData}>
             <div className={style.contactData__item}>
-              <a href="https://g.page/brilliantcarstudiodetailingu?share">
-                <img src={Location} alt="location"/>
+              <a className={style.contactData__link} href="https://g.page/brilliantcarstudiodetailingu?share" >
+                <img className={style.contactData__img} src={Location} alt="location" />
                 ul. Jurajska 20,<br/>32-085 Modlnica
               </a>
             </div>
             <div className={style.contactData__item}>
-              <a href="tel:+48 721 000 010">
-                <img src={Tel} alt="telphone"/>
+              <a className={style.contactData__link} href="tel:+48 721 000 010" >
+                <img className={style.contactData__img} src={Tel} alt="telphone" />
                 +48 721 000 010
               </a>
             </div>
             <div className={style.contactData__item}>
-              <a href="mailto:brilliantcarstudio@gmail.com">
-                <img src={Email} alt="e-mail"/>
+              <a className={style.contactData__link} href="mailto:brilliantcarstudio@gmail.com">
+                <img className={style.contactData__img} src={Email} alt="e-mail"/>
                 brilliantcarstudio@gmail.com
               </a>
             </div> 
           </div>
           <p className={style.hours}>Poniedziałek - Piątek 9:00 - 17:00</p>
           <div className={style.copyright}>
-            <p>{new Date().getFullYear()} © Wszystkie prawa zastrzeżone</p>
-            <p>Kopiowanie i wykorzystywanie zdjęć produktów bez zgody autora zabronione.<br/> 
+            <p className={style.copyright__paragraph}>{new Date().getFullYear()} © Wszystkie prawa zastrzeżone</p>
+            <p className={style.copyright__paragraph}>Kopiowanie i wykorzystywanie zdjęć produktów bez zgody autora zabronione.<br/> 
               Strona korzysta z informacji przechowywanych w plikach cookies w celach funkcjonalnych oraz statystycznych.</p>
           </div>
-          <p className={style.created}>Created by <a href="mailto:adamkret93@gmail.com">{data.site.siteMetadata.author}</a></p>
+          <p className={style.created}>Created by <a className={style.created__link} href={"mailto:"+data.site.siteMetadata.author_email}>{data.site.siteMetadata.author}</a></p>
         </div>
       </footer>
     </>
