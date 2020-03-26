@@ -3,6 +3,7 @@ module.exports = {
     title: `Brilliant Car`,
     description: `Brilliant Car - Studio Detailingu`,
     author: `TimeForIT`,
+    author_email: `adamkret93@gmail.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
