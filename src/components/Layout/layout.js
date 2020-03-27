@@ -28,9 +28,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header/>
-      <div className='container'>
-        <main>{children}</main>
-      </div>
+      <main>{children}</main>
       <footer className={style.footer}>
         <div className="container">
           <div className={style.contactData}>
