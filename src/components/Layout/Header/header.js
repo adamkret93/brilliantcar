@@ -20,8 +20,8 @@ const Header = () => (
       <div className={`${style.header__wrapper} ${style.header__wrapperRight}`}>
         <Link to="/kontakt" className={style.header__item}>Kontakt</Link>
         <Link to="/blog" className={style.header__item}>Blog</Link>
-        <Link to="fb" className={style.header__item}>FB</Link>
-        <Link to="insta" className={style.header__item}>INSTAGRAM</Link>
+        <Link to="fb" className={`${style.header__item} ${style.header__itemIcon} ${style.header__itemFb}`}>FB</Link>
+        <Link to="insta" className={`${style.header__item} ${style.header__itemIcon} ${style.header__itemInsta}`}>INSTAGRAM</Link>
       </div>
     </div>
   </header>

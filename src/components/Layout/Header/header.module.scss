@@ -18,6 +18,7 @@ header {
 }
 .header__wrapper-left,
 .header__wrapper-right { width: calc(50% - 65px); }
+.header__wrapper-right { align-items: center; }
 .header__item {
     display: block;
     color: #fff;
@@ -30,6 +31,21 @@ header {
     text-transform: uppercase;
 
     &:hover { border-color: #FF9F00; }
+}
+.header__item--icon {
+    font-size: 0;
+    width: 35px;
+    height: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:hover { border-color: transparent; }
+}
+.header__item--fb {
+    background-image: url(../../../assets/images/fb.svg);
+}
+.header__item--insta{
+    background-image: url(../../../assets/images/insta.svg);
 }
 .header__logo {
     position: relative;
