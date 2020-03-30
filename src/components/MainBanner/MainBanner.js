@@ -2,12 +2,15 @@ import React, {Component} from 'react'
 //import Img from "gatsby-image"
 import style from "./MainBanner.module.scss"
 import LogoBig from '../../assets/images/logo-big.png'
+
+import IMG1_1 from "../../assets/images/banner/1/1.jpg"
+import IMG1_2 from "../../assets/images/banner/1/2.jpg"
 import IMG1 from "../../assets/images/bmw7.jpg"
 import IMG2 from "../../assets/images/bmw7_3.jpg"
 
 class mainBanner extends Component {
     state = {
-        image1: [IMG1, IMG2], //345 x 320
+        image1: [IMG1_1, IMG1_2], //320 x 275
         image2: [IMG1, IMG2], //690 x 400
         image3: [IMG1, IMG2], // 575 x 480
         image4: [IMG1, IMG2], // 575 x 400

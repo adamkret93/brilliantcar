@@ -4,37 +4,38 @@
     margin-bottom: 60px;
 }
 .banner__logo-wrapper {
-    width: 50%;
+    width: 40%;
     padding: 0 20px;
     z-index: 10;
 }
-.banner__logo { 
-    display: block;
-    margin: 50px auto 0; 
-}
-.banner__motto {
-    margin: 75px auto 0;
-    text-align: center;
-    font-size: 60px;
-    font-weight: 500;
-}
-.banner__motto-item {
-    max-width: 300px;
-    margin: 0 auto;
-    border: 1px solid $goldColor;
-    position: relative;
-    background-color: $backgroundColor;
-}
-.banner__motto-item--first { margin-left: 25%; margin-bottom: -10px; z-index: 10; }
-.banner__motto-item--second { margin-left: 39%; }
+    .banner__logo { 
+        display: block;
+        margin: 50px auto 0; 
+    }
+    .banner__motto {
+        margin: 75px auto 0;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 500;
+    }
+    .banner__motto-item {
+        max-width: 300px;
+        margin: 0 auto;
+        border: 1px solid $goldColor;
+        position: relative;
+        background-color: $backgroundColor;
+    }
+    .banner__motto-item--first { margin-left: 18%; margin-bottom: -10px; z-index: 10; }
+    .banner__motto-item--second { margin-left: 38%; }
+
 .banner__banner-items {
-    width: 60.5%;
-    margin-left:-10%;
+    width: 60%;
+    /* margin-left:-10%; */
     display: grid;
     grid-template-columns:  repeat(11, 1fr);
-    grid-auto-rows: minmax(80px, auto);
+    grid-auto-rows: minmax(68px, auto);
 }
-.banner__banner-item{
+.banner__banner-item {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -66,5 +67,85 @@
     border-width: 0 1px 1px 0;
 }
 
-
+/*Media Queries*/
+@media only screen and (max-width: 479px) {
+    .banner__logo-wrapper {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .banner__banner-item--two {
+        grid-column: 2 / 12;
+        border-bottom: 0;
+    }
+    .banner__banner-item--three {
+        grid-column: 1 / 11;
+    }
+    .banner__banner-item--one,
+    .banner__banner-item--four { 
+        display: none;
+    }
+}
+@media only screen and (min-width: 480px) {
+    .banner__logo-wrapper {
+        width: 65%;
+        margin-bottom: 25px;
+    }
+}
+@media only screen and (max-width: 767px) {
     
+    .banner__motto { 
+        margin: 25px auto 0; 
+        font-size: 45px;
+    }
+    .banner__motto-item {
+        max-width: 245px;
+    }
+    .banner__motto-item--first {
+        margin-left: 0;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .banner__logo-wrapper {
+        width: 50%;
+    }
+    .banner__motto-item--first {
+        margin-left: 7%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner__logo-wrapper {
+        margin-bottom: 30px;
+    }
+    .banner__motto { 
+        font-size: 45px;
+    }
+    .banner__banner-items { width: 100%; }
+    .banner__banner-item--one{
+        grid-column: 1 / 5;
+    }
+}
+
+@media only screen and (min-width: 981px) and (max-width: 1240px) {
+    .banner__motto { 
+        font-size: 54px;
+    }
+    .banner__motto-item--first {
+        margin-left: 7%;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .banner__motto { 
+        margin: 25px auto 0;
+    }
+    .banner__banner-items {
+        grid-auto-rows: minmax(55px, auto);
+    }
+    
+    .banner__motto-item--second { margin-left: 25%; }
+}    
