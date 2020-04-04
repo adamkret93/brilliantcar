@@ -2,7 +2,7 @@
 
 html {
   box-sizing: border-box;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -20,6 +20,7 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+.no-scroll { overflow: hidden; }
 article,
 aside,
 details,

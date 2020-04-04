@@ -23,7 +23,7 @@
         margin: 0 auto;
         border: 1px solid $goldColor;
         position: relative;
-        background-color: $backgroundColor;
+        background-color: $bgColor;
     }
     .banner__motto-item--first { margin-left: 18%; margin-bottom: -10px; z-index: 10; }
     .banner__motto-item--second { margin-left: 38%; }
@@ -116,6 +116,9 @@
     .banner {
         flex-direction: column;
         align-items: center;
+    }
+    .banner__logo {
+        margin-top: 10px;
     }
     .banner__logo-wrapper {
         margin-bottom: 30px;
