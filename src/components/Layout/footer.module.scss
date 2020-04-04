@@ -7,6 +7,8 @@ footer {
 
 .contact-data {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 20px;
 }
 .contact-data__item {
@@ -37,6 +39,33 @@ footer {
     text-align: center;
     font-size: 12px;
 }
-.copyright__paragraph { margin-bottom: 10px; }
-
+.copyright__paragraph { margin-bottom: 20px; }
+.created { margin-bottom: 0; }
 .created__link { color: #fff; }
+
+/*Media Queries*/
+@media only screen and (max-width: 479px){
+    .contact-data__item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contact-data__img {
+        max-height: 35px;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 766px){
+    .contact-data__item {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 980px){
+    .contact-data__link {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-data__img {
+        margin: 0 0 10px;
+    }
+}

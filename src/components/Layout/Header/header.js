@@ -44,6 +44,7 @@ const Header = () => {
 
       <Burger open={open} click={clickBurgerHandler}/>
       <SideMenu open={open} className={style.header__wrapper}>
+        <Link to="/" className={style.header__item}>Strona główna</Link>
         <Link to="/page3" className={style.header__item}>Nasza historia</Link>
         <Link to="/uslugi" className={style.header__item}>Usługi</Link>
         <Link to="/realizacje" className={style.header__item}>Realizacje</Link>
