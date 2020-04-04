@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
       </div>
-      <footer className={style.footer}>
+      {/* <footer className={style.footer}>
         <div className="container">
           <div className={style.contactData}>
             <div className={style.contactData__item}>
@@ -62,7 +62,7 @@ const Layout = ({ children }) => {
           </div>
           <p className={style.created}>Created by <a className={style.created__link} href={"mailto:"+data.site.siteMetadata.author_email}>{data.site.siteMetadata.author}</a></p>
         </div>
-      </footer>
+      </footer> */}
     </>
   )
 }

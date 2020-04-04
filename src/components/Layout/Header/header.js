@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
@@ -13,8 +13,11 @@ const Header = () => {
 
   function clickBurgerHandler () {
     setOpen(prevOpen => !prevOpen);
-    open ? document.body.style.overflow ='auto' : document.body.style.overflow ='hidden';
   }
+  
+  useEffect(() => {
+    open ? document.body.classList.add("no-scroll") : document.body.classList.remove("no-scroll");
+  });
 
   return ( 
     <>
