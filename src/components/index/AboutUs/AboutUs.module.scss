@@ -1,0 +1,46 @@
+@import '../../../assets/scss/style.scss';
+
+.about-us{
+    display: block;
+    position: relative;
+    margin-bottom: 130px;
+}
+
+.about-us__image{
+    width: 70%;
+    max-width: 960px;
+    z-index: 100;
+    box-shadow: 0 0 20px $bgColor;
+}
+.about-us__box {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 35%;
+    background: #fff;
+    color: #707070;
+    padding: 50px 45px 40px 100px;
+    box-sizing: border-box;
+}
+
+.about-us__header{
+    font-size: 40px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 35px;
+
+    &::after{
+        content: '';
+        position: absolute;
+        display: block;
+        border-bottom: 2px solid $goldColor;
+        width: 10%;
+    }
+}
+
+.about-us__content {
+    font-size: 20px;
+    margin-bottom: 25px;
+    line-height: 30px;
+}

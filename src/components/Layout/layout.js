@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header/>
-      <div>
+      <div className='content'>
         <main>{children}</main>
       </div>
       <footer className={style.footer}>

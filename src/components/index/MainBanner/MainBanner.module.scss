@@ -1,7 +1,8 @@
-@import '../../assets/scss/style.scss';
+@import '../../../assets/scss/style.scss';
 .banner {
     display: flex;
     margin-bottom: 60px;
+    border-bottom: 2px solid $goldColor;
 }
 .banner__logo-wrapper {
     width: 40%;
@@ -30,7 +31,6 @@
 
 .banner__banner-items {
     width: 60%;
-    /* margin-left:-10%; */
     display: grid;
     grid-template-columns:  repeat(11, 1fr);
     grid-auto-rows: minmax(68px, auto);

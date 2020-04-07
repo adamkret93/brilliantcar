@@ -1,21 +1,15 @@
 import React from "react"
-/* import { Link } from "gatsby" */
-import Form from "../components/contactForm"
 
 import Layout from "../components/Layout/layout"
-import Image from "../components/image"
-import Banner from "../components/MainBanner/MainBanner"
 import SEO from "../components/seo"
+import Banner from "../components/index/MainBanner/MainBanner"
+import AboutUs from "../components/index/AboutUs/AboutUs"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Strona główna" />
     <Banner/>
-    <div className="container">
-      <h1>Website under construction ;) </h1>
-      <Form/>
-      <Image/>
-    </div>
+    <AboutUs/>
   </Layout>
 )
 
