@@ -5,7 +5,10 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 80px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
     background: #fff;
     transform: translateX(100%);
     z-index: 100;

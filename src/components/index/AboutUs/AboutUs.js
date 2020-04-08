@@ -17,7 +17,7 @@ const AboutUs = () => {
       }
   `)
     return(
-        <div className={`${style.aboutUs} ${style.container}`}>
+        <section className={`${style.aboutUs} ${style.container}`}>
             <Img className={style.aboutUs__image} fluid={data.placeholderImage.childImageSharp.fluid} alt="O nas"/>
             <div className={style.aboutUs__box}>
                 <h2 className={style.aboutUs__header}>O nas</h2>
@@ -27,7 +27,7 @@ const AboutUs = () => {
                     a każdy samochód jest traktowany z najwyższą dbałością.  
                 </p>
             </div>
-        </div>
+        </section>
     )
 }
 
