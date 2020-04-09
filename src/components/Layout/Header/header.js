@@ -36,11 +36,11 @@ const Header = () => {
           <div className={`${style.header__wrapper} ${style.header__wrapperRight}`}>
             <Link to="/kontakt" className={style.header__item}>Kontakt</Link>
             <Link to="/blog" className={style.header__item}>Blog</Link>
-            <Link to="fb" className={`${style.header__item} ${style.header__itemIcon} ${style.header__itemFb}`}>FB</Link>
-            <Link to="insta" className={`${style.header__item} ${style.header__itemIcon} ${style.header__itemInsta}`}>INSTAGRAM</Link>
+            <a href="https://www.facebook.com/brilliantcarstudiodetailingu/" className={`${style.header__item} ${style.header__itemIcon} ${style.header__itemFb}`}>FB</a>
+            <a href="https://www.instagram.com/brilliantcarstudio/" className={`${style.header__item} ${style.header__itemIcon} ${style.header__itemInsta}`}>INSTAGRAM</a>
           </div>
         </div>
-      </header>
+      </header> 
 
       <Burger open={open} click={clickBurgerHandler}/>
       <SideMenu open={open} className={style.header__wrapper}>
@@ -50,8 +50,8 @@ const Header = () => {
         <Link to="/realizacje" className={style.header__item}>Realizacje</Link>
         <Link to="/kontakt" className={style.header__item}>Kontakt</Link>
         <Link to="/blog" className={style.header__item}>Blog</Link>
-        <Link to="fb" className={`${style.header__item} ${style.header__itemIcon} ${style.header__itemFb}`}>FB</Link>
-        <Link to="insta" className={`${style.header__item} ${style.header__itemIcon} ${style.header__itemInsta}`}>INSTAGRAM</Link>
+        <a href="https://www.facebook.com/brilliantcarstudiodetailingu/" className={`${style.header__item} ${style.header__itemIcon} ${style.header__itemFb}`}>FB</a>
+        <a href="https://www.instagram.com/brilliantcarstudio/" className={`${style.header__item} ${style.header__itemIcon} ${style.header__itemInsta}`}>INSTAGRAM</a>
       </SideMenu>
     </>
   )
