@@ -1,6 +1,7 @@
 import React from 'react'
 import {useStaticQuery, graphql} from 'gatsby'
 import Image from 'gatsby-image'
+import {Link} from 'gatsby'
 
 import style from './Realizations.module.scss'
 
@@ -23,14 +24,14 @@ const Realizations = () => {
       }
       image3: file(relativePath: { eq: "bmw7_2.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1145) {
+          fluid(maxWidth: 1145, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       image4: file(relativePath: { eq: "bmw_siedzenie_v2.jpg" }) { 
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 762, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -39,10 +40,23 @@ const Realizations = () => {
   `)
     return (
         <section className={style.realizations}>
-            <div className={style.realizations__header}>
-                <h2>Nasze realizacje</h2>
+            {/* <div className={style.realizations__hexagon}>
+                <h2 className={style.realization__text}>Nasze realizacje</h2>
             </div>
-                <p>Zobacz wszystkie</p>
+            <p>Zobacz wszystkie</p> */}
+
+            <div className={style.realizations__hexagon}>
+              <div className={style.realizations__top}></div>
+              <div className={style.realizations__center}><h2>Nasze realizacje</h2></div>
+              <div className={style.realizations__bottom}></div>
+            </div>
+
+            <div className={`${style.realizations__hexagon} ${style.realizations__hexagonSmall}`}>
+              <div className={style.realizations__top}></div>
+              <div className={style.realizations__center}><Link to='/realizacje'>Zobacz więcej</Link></div>
+              <div className={style.realizations__bottom}></div>
+            </div>
+
             <div className={style.realizations__itemOne}>
                 <Image fluid={data.image1.childImageSharp.fluid} />
             </div>
