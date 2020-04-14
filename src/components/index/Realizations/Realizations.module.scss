@@ -1,17 +1,25 @@
 @import '../../../assets/scss/style.scss';
 
 .realizations {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    /* grid-auto-rows: minmax(160px, auto); */
     position: relative;
+    
+}
+.realizations__header{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 25%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
+
 .realizations__hexagon {
-    position: absolute;
-    top: 32%;
-    left: calc(50% - 150px);
-    height: 300px;
+    position: relative;
+    height: 345px;
+    width: 300px;
 
     .realizations__center {
         display: flex;
@@ -19,14 +27,12 @@
         justify-content: center;
         position: absolute;
         $width: 300px;
-        /* top: 30%;
-        left: calc(50% - #{$width/2}); */
         width: $width; 
         height: 173.21px;
         border-left: 3px solid $goldColor;
         border-right: 3px solid $goldColor;
         color: $bgColor;
-        margin: 86.60px 0;
+        top: 86.6px;
         z-index: 10;
         backdrop-filter: blur(10px);
 
@@ -53,26 +59,26 @@
     }
 
     .realizations__top {
-        top: -20px;
+        top: -21px;
         border-top: solid 4.2426px $goldColor;
         border-right: solid 4.2426px $goldColor;
     }
 
     .realizations__bottom {
-        bottom: -67px;
+        bottom: -21px;
         border-bottom: solid 4.2426px $goldColor;
         border-left: solid 4.2426px $goldColor;
     }
 }
 .realizations__hexagon--small {
-    top: calc(56% + 2px);
-    left: calc(50% - 2px);
     height: 0;
+    width: 3px;
 
     .realizations__center {
         width: 170px;
         height: 90px;
-        margin: 61px 0;
+        margin: 0;
+        top:0;
 
         a {
             font-size: 24px;
@@ -89,17 +95,23 @@
     .realizations__top,
     .realizations__bottom {
         width: 121px;
-        height: 121px;
+        height: 120px;
         left: 25px;
     }
     .realizations__top {
-        top: 0;
+        top: -61px;
     }
 
     .realizations__bottom {
-        bottom: -212px;
+        bottom: -151px;
     }
 }
+.realizations__wrapper-box {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    position: relative;
+}
+
 .realizations__text {
     margin: 0;
     font-size: 30px;

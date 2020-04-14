@@ -44,7 +44,7 @@ const Realizations = () => {
                 <h2 className={style.realization__text}>Nasze realizacje</h2>
             </div>
             <p>Zobacz wszystkie</p> */}
-
+          <div className={style.realizations__header}>
             <div className={style.realizations__hexagon}>
               <div className={style.realizations__top}></div>
               <div className={style.realizations__center}><h2>Nasze realizacje</h2></div>
@@ -56,19 +56,22 @@ const Realizations = () => {
               <div className={style.realizations__center}><Link to='/realizacje'>Zobacz więcej</Link></div>
               <div className={style.realizations__bottom}></div>
             </div>
-
-            <div className={style.realizations__itemOne}>
-                <Image fluid={data.image1.childImageSharp.fluid} />
-            </div>
-            <div className={style.realizations__itemTwo}>
-                <Image fluid={data.image2.childImageSharp.fluid} />
-            </div>
-            <div className={style.realizations__itemThree}>
-                <Image fluid={data.image3.childImageSharp.fluid} />
-            </div>
-            <div className={style.realizations__itemFour}>
-                <Image fluid={data.image4.childImageSharp.fluid} />
-            </div>
+          </div>
+          <div className={style.realizations__wrapperBox}>
+              <div className={style.realizations__itemOne}>
+                  <Image fluid={data.image1.childImageSharp.fluid} />
+              </div>
+              <div className={style.realizations__itemTwo}>
+                  <Image fluid={data.image2.childImageSharp.fluid} />
+              </div>
+              <div className={style.realizations__itemThree}>
+                  <Image fluid={data.image3.childImageSharp.fluid} />
+              </div>
+              <div className={style.realizations__itemFour}>
+                  <Image fluid={data.image4.childImageSharp.fluid} />
+              </div>
+          </div>
+            
         </section>
     )
 }
