@@ -4,7 +4,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./Header/header"
+import Navigation from "./Navigation/navigation"
 import "./layout.scss"
 import "../../assets/scss/style.scss"
 import style from './footer.module.scss'
@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header/>
+      <Navigation/>
       <div className='content'>
         <main>{children}</main>
       </div>
