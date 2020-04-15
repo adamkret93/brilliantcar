@@ -199,7 +199,7 @@
         @include grid-item-small(4);
     }
     .offer__circle {
-        top: 20%;
+        top: 15% !important;
     }
 }
 @media only screen and (max-width: 980px){

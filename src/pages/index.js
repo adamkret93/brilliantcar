@@ -6,6 +6,7 @@ import Banner from "../components/index/MainBanner/MainBanner"
 import AboutUs from "../components/index/AboutUs/AboutUs"
 import Offer from "../components/index/Offer/Offer"
 import Realizations from "../components/index/Realizations/Realizations"
+import SocialMedia from "../components/index/SocialMedia/SocialMedia"
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <AboutUs/>
     <Offer/>
     <Realizations/>
+    <SocialMedia/>
   </Layout>
 )
 

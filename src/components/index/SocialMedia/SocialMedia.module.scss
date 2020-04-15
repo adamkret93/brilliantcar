@@ -1,0 +1,77 @@
+@import '../../../assets/scss/style.scss';
+
+$size: 320px;
+
+.socialMedia__header {
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.socialMedia__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 930px;
+    margin:auto;
+}
+.socialMedia__item {
+    display: block;
+    font-size: 0;
+    width: $size;
+    height: $size;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.2s;
+
+    &:hover {
+        box-shadow: 0 0 20px rgba(255, 159, 0, 0.61);
+    }
+}
+.socialMedia__item--fb {
+    background-image: url(../../../assets/images/fb.svg);
+    border-radius: 45px;
+}
+.socialMedia__item--insta{
+    margin-top: $size/2;
+    background-image: url(../../../assets/images/insta.svg);
+    border-radius: 93px;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 479px) {
+    .socialMedia__header {
+        font-size: 35px;
+    }
+    $size: 90px;
+    .socialMedia__item {
+        width: $size;
+        height: $size;
+    }
+    .socialMedia__item--fb {
+        border-radius: 13px;
+    }
+    .socialMedia__item--insta{
+        border-radius: 26px;
+        margin-top: $size/2;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 980px) {
+    $size: 150px;
+    .socialMedia__item {
+        width: $size;
+        height: $size;
+    }
+    .socialMedia__item--fb {
+        border-radius: 25px;
+    }
+    .socialMedia__item--insta{
+        border-radius: 43px;
+        margin-top: $size/2;
+    }
+}
+@media only screen and (max-width: 980px) {
+    .socialMedia__wrapper {
+        justify-content: space-around;
+    }
+}
