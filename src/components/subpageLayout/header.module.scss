@@ -1,0 +1,61 @@
+@import '../../assets/scss/style.scss';
+
+$border: 3px solid $goldColor;
+.header__wrapper {
+    margin-bottom: 130px;
+}
+.header {
+    text-align: center;
+}
+.header__title {
+    display: inline-block;
+    text-align: left;
+    font-size: 80px;
+    margin: 60px auto 80px;
+    padding: 0 20px;
+    margin-bottom: 60px; 
+    position: relative;
+
+    span {
+        display: block;
+        /* text-align: right; */
+        margin-left: 150px;
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+    }
+    &:before {
+        top: -10px;
+        left: 0;
+        border-left: $border;
+        border-top: $border;
+    }
+    &:after {
+        bottom: -10px;
+        right: 0;
+        border-right: $border;
+        border-bottom: $border;
+    }
+}
+
+.header__descript{
+    max-width: 515px;
+    padding: 50px;
+    color: #707070;
+    font-size: 25px;
+    background: #fff;
+}
+
+.header__descript--left{
+    margin-left: 10%;
+}
+
+.header__descript--right{
+    margin: 0 10% 0 auto;
+}

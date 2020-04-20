@@ -19,7 +19,7 @@ class mainBanner extends Component {
         10000);
     }
 
-    UNSAFE_componentWillUnmount () {
+    componentWillUnmount () {
         clearInterval(this.myInterval);
     }
 

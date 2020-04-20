@@ -600,3 +600,14 @@ pre tt:after {
 .content {
   margin-bottom: 40px;
 }
+.bg {
+  background-image: url(../../assets/images/bg-icon.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+.bg-right{
+  background-position: 115% 240px;
+}
+.bg-left{
+  background-position: -25% 240px;
+}
