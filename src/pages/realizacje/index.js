@@ -6,11 +6,10 @@ import SEO from "../../components/seo"
 import Header from "../../components/subpageLayout/header"
 import Realization from "../../components/Realizations/Realization"
 
-const IndexPage = ({
-        data: {
-            allMarkdownRemark: { edges },
-        },
-    }) => {
+const IndexPage = ({ data }) => {
+    const edges = data.allMarkdownRemark.edges;
+    const gallery = data.allFile.edges;
+
     const title = "Nasze realizacje";
     const desc = (
         <>
@@ -20,7 +19,7 @@ const IndexPage = ({
     );
     const Realizations = edges
         .filter(edge => !!edge.node.frontmatter.date)
-        .map((edge, index) => <Realization key={edge.node.id} side={index % 2 ? 'Right' : 'Left'} data={edge.node} />)
+        .map((edge, index) => <Realization key={edge.node.id} side={index % 2 ? 'Right' : 'Left'} data={edge.node} gallery={gallery.filter(el => el.node.relativeDirectory === edge.node.frontmatter.name)} />)
 
     return(
         <Layout background={true} bgSide='right'>
@@ -46,36 +45,22 @@ export const pageQuery = graphql`
           html
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
+            name
             title
-            image1 {
-              childImageSharp {
-                fluid(maxWidth: 1030, quality: 100) { 
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            image2 {
-              childImageSharp {
-                fluid(maxWidth: 260, quality: 100) { 
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            image3 {
-              childImageSharp {
-                fluid(maxWidth: 260, quality: 100) { 
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            } 
-            image4 {
-              childImageSharp {
-                fluid(maxWidth: 260, quality: 100) { 
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            } 
           }
+        }
+      }
+    },
+    allFile(filter:{extension:{regex:"/(jpeg|jpg|gif|png)/"}, absolutePath: {regex: "/(realizacje)/"}}) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(maxWidth: 1920, quality: 100) { 
+              ...GatsbyImageSharpFluid
+              originalName
+            }
+          }
+          relativeDirectory
         }
       }
     }

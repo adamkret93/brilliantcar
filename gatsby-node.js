@@ -20,3 +20,16 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
   }
 } */
+
+exports.sourceNodes = ({ actions, schema }) => {
+  const { createTypes } = actions
+  createTypes(`
+    type MarkdownRemarkFrontmatter {
+      gallery_img: File
+    }
+
+    type MarkdownRemark implements Node {
+      frontmatter: MarkdownRemarkFrontmatter
+    }
+  `)
+}

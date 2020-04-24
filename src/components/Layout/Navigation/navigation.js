@@ -11,7 +11,7 @@ const Header = () => {
 
   const [open, setOpen] = useState(false);
 
-  function clickBurgerHandler () {
+  const clickBurgerHandler = () => {
     setOpen(prevOpen => !prevOpen);
   }
   

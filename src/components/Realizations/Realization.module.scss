@@ -10,7 +10,7 @@
 
     .realization__descript {
         right: 0;
-        padding: 40px 40px 40px 5.5%;
+        padding: 40px 40px 40px 3.5%;
     }
 }
 .realization--right{
@@ -37,7 +37,7 @@
     }
     .realization__descript {
         left: 0;
-        padding: 40px 5.5% 40px 40px;
+        padding: 40px 3.5% 40px 40px;
     }
 }
 
@@ -51,13 +51,15 @@
 .gallery__item {
     max-width: 260px;
     width: 26%;
+    outline-color: $goldColor;
+    cursor: pointer;
 }
 .gallery__item--one {
     box-shadow: 0 0 20px $bgColor;
     max-width: 1050px;
     width: 100%;
 }
-.gallery__item--five{
+.gallery__item--five {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,10 +68,11 @@
     text-align: center;
     border: 1px solid $goldColor;
     color: $bgColor;
-    background: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,1);
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
+    outline: none;
 
     &:hover {
         text-decoration: underline;
@@ -81,7 +84,7 @@
     top: 70px;
     background: #fff;
     color: #333;
-    width: 36.5%;
+    width: 34.5%;
     font-size: 16px;
     color: #707070;
 
@@ -92,20 +95,25 @@
 .realization__header {
     position: relative;
     font-size: 30px;
+    margin-bottom: 30px;
 
-    &:after{
+    &:after {
         content: '';
-
+        display: block;
+        position: absolute;
+        bottom: -8px;
+        width: 45px;
+        border-bottom: 2px solid $goldColor;
     }
 }
-.realization__list{
+.realization__list {
     position: relative;
     list-style: none;
 
     li {
         position: relative;
 
-        &::before{
+        &::before {
             content: '';
             position: absolute;
             display: block;
@@ -117,5 +125,12 @@
             background-position: center;
             background-repeat: no-repeat;
         }
+    }
+}
+
+
+@media only screen and (max-width: 1650px) {
+    .realization {
+        width: 95%;
     }
 }

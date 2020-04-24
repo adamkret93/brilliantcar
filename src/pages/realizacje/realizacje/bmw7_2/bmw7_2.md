@@ -1,8 +1,9 @@
 ---
-date: "2020-03-17"
-name: "bmw7" #name must be the same like folder name
-title: "BMW M8 Gran Coupé w pakiecie Competition"
+date: "2020-04-18"
+name: "bmw7_2" #name must be the same like folder name
+title: "BMW M8 Gran Coupé w pakiecie Competition 2"
 ---
+
 
 <li>aplikację bezbarwnej folii ochronnej, dedykowanej do matowego lakieru Xpel Stealth na całą maskę, przedni zderzak, zakola przednich błotników, wnęki klamek, próg załadunkowy tylnego zderzaka</li>
 <li>aplikację bezbarwnej folii ochronnej Xpel Ultimate Plus na przednie reflektory, zewnętrzne lusterka, słupki boczne "B" oraz dekory carbonowe przedniego zderzaka</li>

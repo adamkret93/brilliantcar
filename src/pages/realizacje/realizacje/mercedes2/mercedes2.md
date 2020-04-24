@@ -1,7 +1,7 @@
 ---
-date: "2020-04-17"
-name: "mercedes" #name must be the same like folder name
-title: "Mercedes-Benz A45 AMG"
+date: "2020-04-19"
+name: "mercedes2" #name must be the same like folder name
+title: "Mercedes-Benz A45 AMG 2"
 ---
 
 <li>dekontaminacja lakieru</li>
