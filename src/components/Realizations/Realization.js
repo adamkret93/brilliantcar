@@ -27,17 +27,18 @@ const Realization = ({side, data, gallery}) => {
         b = y.originalName.toUpperCase();
         return a === b ? 0 : a > b ? 1 : -1;
       });
-
   
+  const galleryItems = sortGallery
+      .filter((item, index) => index < 4)
+      .map((item, index) => <div key={index} className={`${style.gallery__item} ${style["gallery__item"+(index+1)]}`} role="button" tabIndex="0" onClick={() => openLightbox(index)} onKeyDown={() => openLightbox(0)}><Image fluid={item}/></div> );
+  
+  /* console.log(galleryItems); */
   return(
     <>
       <div className={`${style.realization} ${style["realization"+side]}`}>
           <div className={style.gallery}>
-              <div className={`${style.gallery__item} ${style.gallery__itemOne}`} role="button" tabIndex="0"  onClick={() => openLightbox(0)} onKeyDown={() => openLightbox(0)}><Image fluid={sortGallery[0]} alt={title}/></div>
-              <div className={`${style.gallery__item} ${style.gallery__itemTwo}`} role="button" tabIndex="0" onClick={() => openLightbox(1)} onKeyDown={() => openLightbox(0)}><Image fluid={sortGallery[1]}/></div>
-              <div className={`${style.gallery__item} ${style.gallery__itemThree}`} role="button" tabIndex="0" onClick={() => openLightbox(2)} onKeyDown={() => openLightbox(0)}><Image fluid={sortGallery[2]}/></div>
-              <div className={`${style.gallery__item} ${style.gallery__itemFour}`} role="button" tabIndex="0" onClick={() => openLightbox(3)} onKeyDown={() => openLightbox(0)}><Image fluid={sortGallery[3]}/></div>
-              <button className={`${style.gallery__item} ${style.gallery__itemFive}`} tabIndex="0" onClick={() => openLightbox()}>Zobacz wszystkie</button>
+              {galleryItems}
+              <button className={`${style.gallery__item} ${style.gallery__item5}`} tabIndex="0" onClick={() => openLightbox()}>Zobacz wszystkie</button>
           </div>
           <div className={style.realization__descript}>
               <h3 className={style.realization__header}>{title}</h3>

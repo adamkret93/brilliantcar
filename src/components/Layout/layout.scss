@@ -19,6 +19,21 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+   
+  &::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.7);
+      
+  }
+
+  &::-webkit-scrollbar-thumb {
+      background-color: #FF9F00;
+      outline: 1px solid slategrey;
+      
+  }
 }
 .no-scroll { overflow: hidden; }
 article,
@@ -611,3 +626,4 @@ pre tt:after {
 .bg-left{
   background-position: -25% 240px;
 }
+
