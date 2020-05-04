@@ -16,18 +16,22 @@
     .banner__motto {
         margin: 75px auto 0;
         text-align: center;
-        font-size: 60px;
+        font-size: 45px;
         font-weight: 500;
+
+        img {
+            max-height: 110px;
+            margin-top: 20px;
+        }
     }
     .banner__motto-item {
-        max-width: 300px;
         margin: 0 auto;
         border: 1px solid $goldColor;
         position: relative;
         background-color: $bgColor;
     }
-    .banner__motto-item--first { margin-left: 18%; margin-bottom: -10px; z-index: 10; }
-    .banner__motto-item--second { margin-left: 38%; }
+    .banner__motto-item--first { margin-left: 20%; margin-bottom: -5px; z-index: 10; max-width: 385px; }
+    .banner__motto-item--second { margin-left: 55%; max-width: 245px; }
 
 .banner__banner-items {
     width: 60%;
@@ -73,6 +77,9 @@
         width: 100%;
         margin-bottom: 25px;
     }
+    .banner__motto { 
+        font-size: 35px;
+    }
     .banner__banner-item--two {
         grid-column: 2 / 12;
     }
@@ -86,30 +93,38 @@
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .banner__logo-wrapper {
-        width: 65%;
+        width: 75%;
         margin-bottom: 25px;
     }
 }
-@media only screen and (max-width: 767px) {
-    
+
+@media only screen and (min-width: 479px) and (max-width: 980px) {
     .banner__motto { 
-        margin: 25px auto 0; 
-        font-size: 45px;
-    }
-    .banner__motto-item {
-        max-width: 245px;
-    }
-    .banner__motto-item--first {
-        margin-left: 0;
+        font-size: 40px;
     }
 }
+
+@media only screen and (max-width: 767px) {
+    .banner__motto { 
+        margin: 25px auto 0; 
+        font-size: 35px;
+    }
+    .banner__motto-item--first {
+        margin-left: auto;
+    }
+    .banner__motto-item--second { 
+        margin-left: auto; 
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 980px) {
     .banner__logo-wrapper {
         width: 50%;
     }
     .banner__motto-item--first {
-        margin-left: 7%;
+        margin-left: auto;
     }
+    .banner__motto-item--second { margin-left: auto; }
 }
 
 @media only screen and (max-width: 980px) {
@@ -123,22 +138,20 @@
     .banner__logo-wrapper {
         margin-bottom: 30px;
     }
-    .banner__motto { 
-        font-size: 45px;
-    }
     .banner__banner-items { width: 100%; }
     .banner__banner-item--one{
         grid-column: 1 / 5;
     }
 }
 
-@media only screen and (min-width: 981px) and (max-width: 1240px) {
+@media only screen and (min-width: 981px) and (max-width: 1400px) {
     .banner__motto { 
-        font-size: 54px;
+        font-size: 40px;
     }
     .banner__motto-item--first {
         margin-left: 7%;
     }
+    .banner__motto-item--second { margin-left: 25%; }
 }
 
 @media only screen and (max-width: 1240px) {
@@ -148,6 +161,4 @@
     .banner__banner-items {
         grid-auto-rows: minmax(55px, auto);
     }
-    
-    .banner__motto-item--second { margin-left: 25%; }
 }    

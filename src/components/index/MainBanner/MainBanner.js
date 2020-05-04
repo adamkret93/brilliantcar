@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import style from "./MainBanner.module.scss"
 import LogoBig from '../../../assets/images/logo-big.png'
+import fxprotect from '../../../assets/images/fxprotect.jpg'
+
 
 import IMG1_1 from "../../../assets/images/banner/1/1.jpg"
 import IMG1_2 from "../../../assets/images/banner/1/2.jpg"
@@ -45,7 +47,8 @@ class mainBanner extends Component {
                <div className={style.banner__logoWrapper}>
                     <img className={style.banner__logo} src={LogoBig} alt="Brilliant Car Studio Detailingu"/>
                     <div className={style.banner__motto}>
-                        <p className={`${style.banner__mottoItem} ${style.banner__mottoItemFirst}`}>Dbamy</p><p className={`${style.banner__mottoItem} ${style.banner__mottoItemSecond}`}>o detale</p>
+                        <p className={`${style.banner__mottoItem} ${style.banner__mottoItemFirst}`}>Certyfikowany</p><p className={`${style.banner__mottoItem} ${style.banner__mottoItemSecond}`}>partner</p>
+                        <a href="https://fxprotect.com/" rel="nofollow"><img src={fxprotect} alt="FxProtect"/></a>
                     </div>
                </div>
                <div className={style.banner__bannerItems}>

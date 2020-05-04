@@ -24,8 +24,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `realizacje`,
-        path: `${__dirname}/src/pages/realizacje/realizacje`,
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     `gatsby-transformer-remark`,

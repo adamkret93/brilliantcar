@@ -1,0 +1,51 @@
+@import '../../assets/scss/style.scss';
+
+.realizations__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+$border-width: 1px;
+.realization__item {
+    position: relative;
+    width: 33.333333%;
+    border-style: solid;
+    border-color: $goldColor;
+    border-width: $border-width;
+    border-right-width: 0;
+
+    &:nth-child(3n), 
+    &:last-child { border-right-width: $border-width ; }
+    &:nth-child(n+4) { border-top-width: 0; }
+
+    &:hover {
+        .item__title {
+            opacity: 0;
+        }
+    }
+}
+
+.item__title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* height:100%; */
+    padding: 30px 15px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    opacity: 1;
+    transition: all 0.4s;
+
+    /* &:hover { 
+        opacity: 1; 
+    } */
+}
