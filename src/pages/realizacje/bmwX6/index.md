@@ -11,9 +11,9 @@ main_img: bmwX6_1.jpg
 Dostosowując budżet klienta postawiliśmy na sprawdzone połączenie <strong>pakietu One Step z woskowaniem</strong>. </p>
 <p>Naszym zadaniem było:</p>
 <ul>
-    <li>jednoetapową korektę lakieru systemem polerskim <strong>Rupes BigFoot Poland</strong></li>
+    <li>jednoetapowa korektę lakieru systemem polerskim <strong>Rupes BigFoot Poland</strong></li>
     <li>woskowanie karoserii i felg twardym woskiem klasy Premium</li>
     <li>czyszczenie i impregnację tapicerki skórzanej produktami od <strong>Colourlock Polska</strong></li>
     <li>detailingowe czyszczenie wnętrza </li>
-    <li>powłokę hydrofobową na szybę czołową GRATIS</li>
+    <li>powłoka hydrofobową na szybę czołową GRATIS</li>
 </ul>

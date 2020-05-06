@@ -11,8 +11,8 @@ main_img: volvoxc60_1.jpg
     <li>usunięcie fabrycznych niedoskonałości</li>
     <li>zabezpieczenie lakieru karoserii powłoką ceramiczną o wytrzymałości do 5 lat</li>
     <li>zabezpieczenie felg dedykowaną powłoką ceramiczną do felg aluminiowych</li>
-    <li>aplikację powłoki hydrofobowej na wszystkie szyby</li>
-    <li>impregnację tapicerki skórzanej produktami od <strong>Colourlock Polska</strong></li>
-    <li>aplikację bezbarwnej <strong>folii ochronnej XPEL Poland Ultimate </strong> na przednie reflektory, lusterka boczne, wnęki klamek drzwi, słupki boczne piano black, próg załadunkowy oraz dolne powierzchnie drzwi i tylnego zderzaka wraz z progami</li>
+    <li>aplikacja powłoki hydrofobowej na wszystkie szyby</li>
+    <li>impregnacja tapicerki skórzanej produktami od <strong>Colourlock Polska</strong></li>
+    <li>aplikacja bezbarwnej <strong>folii ochronnej XPEL Poland Ultimate </strong> na przednie reflektory, lusterka boczne, wnęki klamek drzwi, słupki boczne piano black, próg załadunkowy oraz dolne powierzchnie drzwi i tylnego zderzaka wraz z progami</li>
 </ul>
 <p>Pamiętajcie, tą metodą ochrony można zabezpieczyć dowolne, lakierowane elementy samochodu!</p>

@@ -9,6 +9,6 @@ Piękna i Bestia - tak śmiało można nazwać to luksusowe Bmw.
 <p>Naszym zadaniem było:</p>
 <ul>
     <li>przegląd powłoki ceramicznej rozszerzony o aplikację dodatkowej warstwy powłoki o właściwościach hydrofobowych</li>
-    <li>impregnację tapicerki skórzanej produktami <strong>Colourlock Polska</strong></li>
+    <li>impregnacja tapicerki skórzanej produktami <strong>Colourlock Polska</strong></li>
 </ul>
 Tak przygotowane BMW łatwiej będzie można utrzymać w czystości co znacznie poprawi kondycje i szklistość lakieru. 

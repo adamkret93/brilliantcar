@@ -13,8 +13,8 @@ main_img: jeep_1.jpg
 <li>detailingowe mycie z dekontaminacją lakieru</li>
 <li>dwu-etapowa korekta lakieru systemem polerskim <strong>Rupes BigFoot Poland</strong></li>
 <li>aplikacja powłoki ceramicznej <strong>FX Protect</strong> o trwałości do 5 lat na lakier karoserii i aluminiowe felgi (2 kpl.)</li>
-<li>aplikację powłoki hydrofobowej (niewidzialna wycieraczka) na wszystkie szyby od <strong>Koch Chemie Polska</strong></li>
-<li>aplikację folii ochronnej <strong>XPEL Poland Ultimate</strong> na przednie reflektory i wnęki klamek</li>
-<li>aplikację powłoki ceramicznej na zewnętrze plastiki</li>
-<li>kosmetykę wnętrza wraz z impregnacją tapicerki skórzanej produktami <strong>Gliptone Polska</strong></li>
+<li>aplikacja powłoki hydrofobowej (niewidzialna wycieraczka) na wszystkie szyby od <strong>Koch Chemie Polska</strong></li>
+<li>aplikacja folii ochronnej <strong>XPEL Poland Ultimate</strong> na przednie reflektory i wnęki klamek</li>
+<li>aplikacja powłoki ceramicznej na zewnętrze plastiki</li>
+<li>kosmetyka wnętrza wraz z impregnacją tapicerki skórzanej produktami <strong>Gliptone Polska</strong></li>
 </ul>

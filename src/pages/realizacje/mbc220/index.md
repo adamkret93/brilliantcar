@@ -8,9 +8,9 @@ main_img: mbc220_1.jpg
 Nawet 25 letni staruszek jakim jest <strong>Mercedes-Benz C220 (W202)</strong>, dzięki kilku zabiegom kosmetycznym będzie zwracał uwagę przechodniów i cieszył oko właściciela przypominając swoje lata świetności.
 <p>Naszym zadaniem było:</p>
 <ul>
-    <li>jednoetapową rewitalizację lakieru systemem polerskim <strong>Rupes BigFoot Poland</strong></li>
-    <li>aplikację twardego wosku na lakier</li>
-    <li>aplikację powłoki hydrofobowej na szybę czołową</li>
-    <li>kosmetykę wnętrza</li>
+    <li>jednoetapowa rewitalizację lakieru systemem polerskim <strong>Rupes BigFoot Poland</strong></li>
+    <li>aplikacja twardego wosku na lakier</li>
+    <li>aplikacja powłoki hydrofobowej na szybę czołową</li>
+    <li>kosmetyka wnętrza</li>
 </ul>
 Mimo swojego wieku, Mercedes jest użytkowany na co dzień, a teraz dodatkowo odmłodzony i zabezpieczony przed zimą.

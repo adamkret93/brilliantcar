@@ -11,10 +11,10 @@ Wybór padł na <strong>HIKARI PRO Hybrid Coating</strong>, najnowocześniejszą
 <p>W tym przypadku postawiliśmy na powłokę ceramiczną <strong>AQUA Cosmetics</strong> dostarczoną przez <strong>Ekskluzywne kosmetyki samochodowe Shining Car Kraków</strong>.</p>
 <p>Naszym zadaniem było:</p>
 <ul>
-    <li>korektę lakieru systemem polerskim <strong>Rupes BigFoot Poland</strong></li>
-    <li>aplikację powłoki ceramicznej <strong>Hikari PRO Hybrid Coating</strong> o trwałości do 5 lat dostarczonej przez <strong>Ekskluzywne kosmetyki samochodowe Shining Car Kraków</strong></li>
+    <li>korekta lakieru systemem polerskim <strong>Rupes BigFoot Poland</strong></li>
+    <li>aplikacja powłoki ceramicznej <strong>Hikari PRO Hybrid Coating</strong> o trwałości do 5 lat dostarczonej przez <strong>Ekskluzywne kosmetyki samochodowe Shining Car Kraków</strong></li>
     <li>zabezpieczenie felg powłoką ceramiczną</li>
-    <li>aplikacje powłoki hydrofobowej na wszystkie szyby od <strong>Koch-Chemie GmbH</strong></li>
+    <li>aplikacja powłoki hydrofobowej na wszystkie szyby od <strong>Koch-Chemie GmbH</strong></li>
     <li>czyszczenie z impregnacją tapicerki skórzanej produktami od <strong>Colourlock Polska</strong></li>
 </ul>
 <p><strong>Hikari Pro Hybrid Coating</strong> to flagowy produkt Japońskiej firmy Hikari. Jest to obecnie najbardziej zaawansowana powłoka ceramiczna dostępna na rynku. Zestaw ten jest zabezpieczeniem łączącym warstwę bazową, o najwyższej twardości 10H posiadającą <strong>właściwości samoregeneracji</strong> tj. zdolności samo zabliźniania się mikrorys pod wpływem ciepła (promienie słoneczne, ciepła woda) z drugą warstwą hydrofobową.</p> 

@@ -11,5 +11,5 @@ main_img: mb_a45_1.jpg
 <ul>
 <li>dekontaminacja lakieru</li>
 <li>kompleksowe czyszczenie wnętrza wraz z aplikacją dressingu dedykowanego do wnętrz</li>
-<li>aplikacje wosku klasy Premium na karoserię oraz felgi</li>
+<li>aplikacja wosku klasy Premium na karoserię oraz felgi</li>
 </ul>

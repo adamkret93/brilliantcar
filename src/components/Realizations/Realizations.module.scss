@@ -13,12 +13,15 @@ $border-width: 1px;
     border-color: $goldColor;
     border-width: $border-width;
     border-right-width: 0;
+    transition: all 0.4s;
 
     &:nth-child(3n), 
     &:last-child { border-right-width: $border-width ; }
     &:nth-child(n+4) { border-top-width: 0; }
 
     &:hover {
+        box-shadow: 0 0 10px 4px rgba(0,0,0,0.3);
+        z-index: 10;
         .item__title {
             opacity: 0;
         }

@@ -11,8 +11,8 @@ Bez zastanowienia zaproponowaliśmy <strong>pakiet OneStep</strong>, który doda
 <p>Naszym zadaniem było:</p>
 <ul>
     <li>mycie detailingowe z dekontaminacją </li>
-    <li>jednoetapową rewitalizację lakieru systemem polerskim <strong>Rupes BigFoot Poland</strong></li>
-    <li>aplikację twardego wosku klasy Premium na lakier i felgi</li>
-    <li>hydrofobizację szyby czołowej</li>
-    <li>czyszczenie i impregnację tapicerki skórzanej produktami <strong>Colourlock Polska</strong></li>
+    <li>jednoetapowa rewitalizacja lakieru systemem polerskim <strong>Rupes BigFoot Poland</strong></li>
+    <li>aplikacja twardego wosku klasy Premium na lakier i felgi</li>
+    <li>hydrofobizacja szyby czołowej</li>
+    <li>czyszczenie i impregnacja tapicerki skórzanej produktami <strong>Colourlock Polska</strong></li>
 </ul>
