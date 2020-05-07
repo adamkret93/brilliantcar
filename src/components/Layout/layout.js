@@ -13,7 +13,7 @@ import Tel from '../../assets/images/tel.svg'
 import Email from '../../assets/images/email.svg'
 
 
-const Layout = ({ children }) => {
+const Layout = ({ background, bgSide, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
     <>
       <Navigation/>
       <div className='content'>
-        <main>{children}</main>
+        <main className={ background ? 'bg bg-'+bgSide : null}>{children}</main>
       </div>
       <footer className={style.footer}>
         <div className="container">
@@ -70,5 +70,9 @@ const Layout = ({ children }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
+
+Layout.defaultProps = {
+  background: false
+};
 
 export default Layout

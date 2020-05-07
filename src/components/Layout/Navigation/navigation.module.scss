@@ -1,5 +1,6 @@
 @import '../../../assets/scss/style.scss';
-header {
+
+.header {
     position: -webkit-sticky;
     position: sticky; top:0;
     background: $bgColor;
@@ -70,7 +71,7 @@ header {
 
 @media only screen and (max-width: 980px) {
     header {
-        position: relative;
+        position: relative !important;
     }
     header .container { 
         justify-content: space-between; 
