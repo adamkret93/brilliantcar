@@ -63,10 +63,16 @@ $border: 3px solid $goldColor;
 /*Media Queries*/
 @media only screen and (max-width: 479px){
     .header__wrapper {
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
     .header__title {
-        font-size: 40px;
+        font-size: 35px;
+
+        &:before,
+        &:after {
+            width: 60px;
+            height: 55px;
+        }
 
         span {
             margin-left: 45px;
@@ -75,6 +81,7 @@ $border: 3px solid $goldColor;
     .header__descript {
         padding: 25px;
         font-size: 18px;
+        margin: 0 auto;
     }
     .header__descript--left,
     .header__descript--right{
@@ -88,10 +95,22 @@ $border: 3px solid $goldColor;
     }
     .header__title {
         font-size: 50px;
+        
+        &:before,
+        &:after {
+            width: 60px;
+            height: 55px;
+        }
+
+        span {
+            margin-left: 90px;
+        }
+        
     }
     .header__descript {
         padding: 35px;
         font-size: 20px;
+        margin: 0 auto;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 980px) {
