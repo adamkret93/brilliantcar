@@ -23,7 +23,7 @@ const IndexPage = ({ data }) => {
   edges.forEach(element => services[element.node.frontmatter.section] ? services[element.node.frontmatter.section].push(element): null);
   
   const servicesComponents = Object.keys(services)
-    .map(element => <Services title={element} data={services[element]} /> )
+    .map((element, index) => <Services key={index} title={element} data={services[element]} /> )
 
   return(
     <Layout background={true} bgSide='left'>
