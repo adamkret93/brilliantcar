@@ -1,7 +1,107 @@
+@import '../../../assets/scss/style.scss';
+
+$border: 2px solid $goldColor;
 .service{
-    max-width: 200px; 
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background: rgba(255,255,255,0.85);
+    padding: 60px 40px;
+    margin-bottom: 40px;
     color: #333;
+    cursor: pointer;
+    outline-color: $goldColor;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background: rgba(255,255,255,1);
+    }
+}
+.service__title {
+    font-size: 32px;
+    color: $bgColor;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    padding: 0 15px;
+
+    span {
+        font-size: 20px;
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 45px;
+    }
+    &:before {
+        top: -10px;
+        left: 0;
+        border-left: $border;
+        border-top: $border;
+    }
+    &:after {
+        bottom: -10px;
+        right: 0;
+        border-right: $border;
+        border-bottom: $border;
+    }
+}
+.service__price {
+    position: absolute;
+    top: -35px;
+    right: 65px;
+
+    .price__center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        width: 130px;
+        height: 70px;
+        border-left: 2px solid $goldColor;
+        border-right: 2px solid $goldColor;
+        color: $goldColor;
+        background-color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        padding: 0 5px;
+    }
+
+    .price__top,
+    .price__bottom {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        width: 92px;
+        height: 92px;
+        background-color: #fff;
+        left: 19px;
+        -webkit-transform: scaleY(0.5774) rotate(-45deg);
+        -ms-transform: scaleY(0.5774) rotate(-45deg);
+        transform: scaleY(0.5774) rotate(-45deg);
+        
+    }
+
+    .price__top {
+        top: -47px;
+        border-top: solid 3px $goldColor;
+        border-right: solid 3px $goldColor;
+        box-shadow: -40px 25px 20px 21px rgba(0,0,0,0.2);
+    }
+
+    .price__bottom {
+        bottom: -117px;
+        border-bottom: solid 3px $goldColor;
+        border-left: solid 3px $goldColor;
+        box-shadow: 0px 10px 20px 20px rgba(0,0,0,0.2);
+    }
 }

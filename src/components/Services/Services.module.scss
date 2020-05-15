@@ -1,14 +1,56 @@
 @import '../../assets/scss/style.scss';
 
+$border: 3px solid $goldColor;
+
 .services{
     margin-bottom: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    header {
+        text-align: center;
+    }
 }
 .services--biezaca {
-    background: red;
+    background-image: url(../../assets/images/pielegnacja.png);
 }
 .services--renowacja{
-    background: green;
+    background-image: url(../../assets/images/renowacja.png);
 }
 .services--pakiety{
     background:lightblue;
+}
+.services__header {
+    display: inline-block;
+    text-align: left;
+    font-size: 60px;
+    margin: 60px auto 130px;
+    padding: 0 20px;
+    position: relative;
+
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 70px;
+        height: 70px;
+    }
+    &:before {
+        top: -10px;
+        left: 0;
+        border-left: $border;
+        border-top: $border;
+    }
+    &:after {
+        bottom: -10px;
+        right: 0;
+        border-right: $border;
+        border-bottom: $border;
+    }
+}
+
+.services__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }

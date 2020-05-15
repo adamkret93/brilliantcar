@@ -4,7 +4,9 @@ import style from "./Services.module.scss"
 
 const Services = ({title, data}) => {
     const bgClass = title.split(' ');
-    const service = data.map(element => <Service key={element.node.id} title={element.node.frontmatter.title} price={element.node.frontmatter.price} descript={element.node.frontmatter.html} />)
+    
+    const service = data.map(element => { 
+    return <Service key={element.node.id} title={element.node.frontmatter.title} price={element.node.frontmatter.price} descript={element.node.html} />})
     return(
         <div className={`${style.services} ${style["services" + bgClass[0]]}`}>
             <div className="container">
