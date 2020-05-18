@@ -2,6 +2,7 @@
 section: "Biezaca pielegnacja"
 title: "Mycie detailingowe kompletne"
 price: "150 PLN"
+order: 2
 ---
 
-Mycie felg, opon, wnęk. Nałożenie piany aktywnej o neutralnym pH, płukanie, mycie ręczne szamponem na dwa wiadra, osuszanie lakieru, wnęk, felg, usuwanie resztek wody sprężonym powietrzem, mycie szyb z zewnątrz, mycie i osuszenie gumowych dywaników, aplikacja quick detailera, nałożenie dressingu na opony.
+Pakiet mycie z zewnątrz + kosmetyka wnętrza: usuwanie kurzu sprężonym powietrzem, odkurzanie, odświeżenie materiałowych dywaników, czyszczenie i zabezpieczenie plastików wewnątrz, mycie szyb od wewnątrz. Regularna pielęgnacja samochodu.

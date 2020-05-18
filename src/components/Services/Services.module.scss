@@ -4,26 +4,26 @@ $border: 3px solid $goldColor;
 
 .services{
     margin-bottom: 50px;
-    background-position: center;
+    background-position: 100% 50%;
     background-repeat: no-repeat;
     header {
         text-align: center;
     }
 }
 .services--biezaca {
-    background-image: url(../../assets/images/pielegnacja.png);
+    background-image: url(../../assets/images/pielegnacja.jpg);
 }
 .services--renowacja{
-    background-image: url(../../assets/images/renowacja.png);
+    background-image: url(../../assets/images/renowacja.jpg);
 }
 .services--pakiety{
-    background:lightblue;
+    background-image: url(../../assets/images/pakiety.jpg);
 }
 .services__header {
     display: inline-block;
     text-align: left;
     font-size: 60px;
-    margin: 60px auto 130px;
+    margin: 60px auto 115px;
     padding: 0 20px;
     position: relative;
 

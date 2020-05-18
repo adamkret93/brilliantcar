@@ -17,6 +17,7 @@ const Service = ({title, price, descript}) => {
     const closeModal = () => setModalIsOpen(false);
     return(
         <>
+            {title === "Basic" ? <h4 className={style.pakietType}>Samochody fabrycznie nowe:</h4> : (title === "Full" ? <h4 className={style.pakietType}>Samochody używane:</h4> :null) }
             <div className={style.service} role="button" tabIndex="0" onClick={openModal} onKeyDown={enterPress}>
                 <h3 className={style.service__title} dangerouslySetInnerHTML={{__html: title}}></h3>
                 <div className={style.service__price}>
@@ -30,13 +31,13 @@ const Service = ({title, price, descript}) => {
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
                 contentLabel="Szczegóły usługi"
-                className="Modal"
-                overlayClassName="Overlay"
+                className="modal"
+                overlayClassName="overlay"
             >
-                <button className="closeModal" onClick={closeModal} title="Close (ESC)">X</button>
-                <h3>{title}</h3>
-                <div dangerouslySetInnerHTML={{__html: descript}}></div>
-                <p>price:{price}</p>
+                <button className="closeModal" onClick={closeModal} title="Close (ESC)"></button>
+                <h3 className={style.modal__title} dangerouslySetInnerHTML={{__html: title}}></h3>
+                <div dangerouslySetInnerHTML={{__html: descript}} className={style.modal__description}></div>
+                <p className={style.modal__price}>Cena: {price}</p>
             </Modal>
         </>
     )

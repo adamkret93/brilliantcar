@@ -1,8 +1,8 @@
 ---
 section: "Renowacja i ochrona lakieru"
-title: "Pełna korekta - <span>dla samochodów używanych</span>"
-price: "1200 - 1800 PLN*"
-order: 2
+title: "Bezbarwne folie ochronne"
+price: "cena ustalana indywidualnie"
+order: 4
 ---
 
 Mycie kompletne z dekontaminacją lakieru. Wieloetapowa korekta lakieru. Aplikacja wosku klasy premium na lakier oraz felgi. Hydrofobizacja wszystkich szyb. Podana cena jest ceną orientacyjną, cena ostateczna jest zależna od wielkości auta i kondycji lakieru, ustalana

@@ -39,7 +39,10 @@ export default IndexPage
 
 export const pageQuery = graphql`
 query {
-  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/uslugi/"}}) {
+  allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/uslugi/"}},
+    sort: { order: ASC, fields: [frontmatter___order] }
+  ) {
     edges {
       node {
         id

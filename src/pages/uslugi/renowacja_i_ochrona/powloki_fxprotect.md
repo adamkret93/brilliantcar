@@ -1,8 +1,8 @@
 ---
 section: "Renowacja i ochrona lakieru"
-title: "Pełna korekta - <span>dla samochodów używanych</span>"
-price: "1200 - 1800 PLN*"
-order: 2
+title: "Powłoki ochronne FX Protect - <span>dla samochodów fabrycznie nowych</span>"
+price: "400 - 3000 PLN"
+order: 3
 ---
 
 Mycie kompletne z dekontaminacją lakieru. Wieloetapowa korekta lakieru. Aplikacja wosku klasy premium na lakier oraz felgi. Hydrofobizacja wszystkich szyb. Podana cena jest ceną orientacyjną, cena ostateczna jest zależna od wielkości auta i kondycji lakieru, ustalana
