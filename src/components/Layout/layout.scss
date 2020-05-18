@@ -612,3 +612,55 @@ pre tt:after {
   background-position: -25% 240px;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 120;
+}
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 70%;
+  padding: 40px 30px;
+  max-height: 65%;
+  overflow: auto;
+  background-color: #fff;
+  color: #333;
+  z-index:150;
+  outline: none;
+  transition: all 0.2s;
+}
+.closeModal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: transparent;
+  border:0;
+  transition: all 0.2s;
+  background-image: url(../../assets/images/close.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+
+@media only screen and (max-width: 479px) {
+  .modal {
+    left: 5%;
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 980px) {
+  .modal {
+    left: 10%;
+    width: 80%;
+  }
+}
