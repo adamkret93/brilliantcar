@@ -18,7 +18,7 @@ const Service = ({title, price, descript}) => {
     return(
         <>
             {title === "Basic" ? <h4 className={style.pakietType}>Samochody fabrycznie nowe:</h4> : (title === "Full" ? <h4 className={style.pakietType}>Samochody używane:</h4> :null) }
-            <div className={style.service} role="button" tabIndex="0" onClick={openModal} onKeyDown={enterPress}>
+            <div className={`${style.service} ${style["service" + title]}`} role="button" tabIndex="0" onClick={openModal} onKeyDown={enterPress}>
                 <h3 className={style.service__title} dangerouslySetInnerHTML={{__html: title}}></h3>
                 <div className={style.service__price}>
                     <div className={style.price__top}></div>

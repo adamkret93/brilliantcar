@@ -54,3 +54,54 @@ $border: 3px solid $goldColor;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+/*Media Queries*/
+@media only screen and (max-width: 479px){
+    
+    .services__header {
+        font-size: 40px;
+        width: 80%;
+        text-align: center;
+
+        &:before,
+        &:after {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .services__header {
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .services--biezaca{
+        background-position: 80% 50%;
+    } 
+    .services--renowacja{
+        background-position: 88% 50%;
+    } 
+    .services--pakiety{
+        background-position: 50% 50%;
+    } 
+    .services__content {
+        justify-content: unset;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px){
+    .services--pakiety{
+        background-position: 75% 50%;
+    } 
+    .services__content {
+        justify-content: unset;
+    }
+    .services__header {
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 980px){
+    .services{
+        background-size: cover;
+    }    
+}
