@@ -55,6 +55,16 @@ $border: 3px solid $goldColor;
     justify-content: space-around;
 }
 
+.services__info {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+  
+        span {
+            color: #FF9F00;;
+        }
+  }
+
 /*Media Queries*/
 @media only screen and (max-width: 479px){
     

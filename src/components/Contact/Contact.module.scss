@@ -1,0 +1,93 @@
+@import '../../assets/scss/style.scss';
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.contact__info {
+    width: 50%;
+    font-size: 18px;
+}
+.contact__form {
+    width: 50%;
+    font-size: 16px;
+}
+.contact__name {
+    font-size: 30px;
+    font-weight: 600;
+    color: $goldColor;
+    margin-bottom: 30px;
+}
+.contact__adress,
+.contact__tel,
+.contact__email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.contact__img {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 50px;
+    max-height: 35px;
+    margin-right: 20px;
+}
+.form__title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #FF9F00;
+    margin-bottom: 30px;
+}
+.form__label {
+    margin-bottom: 10px;
+    display: block;
+
+    textarea {
+        width: 100%;
+        min-height: 150px;
+        resize: none;
+    }
+    input, textarea {
+        padding: 7px 10px;
+        border-radius: 5px;
+        border: 2px solid transparent;
+        outline: none;
+    }
+    input:focus, textarea:focus {
+        border-color: $goldColor;
+    }
+}
+.form__label--name input, .form__label--email input { 
+    width: 250px;
+}
+.form__label--agree {
+    cursor: pointer; 
+
+    input {
+        margin-right: 10px;
+    }
+}
+.label__title {
+    margin-bottom: 5px;
+    
+    span {
+        color: $goldColor;
+    }
+}
+.form__submit {
+    padding: 15px 20px;
+    background-color: #28a745;
+    border-radius: 5px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    min-width: 200px;
+    transition: background 0.2s;
+
+    &:hover {
+        background-color: #1e7b34;
+    }
+}

@@ -45,7 +45,7 @@ if ($_POST) {
 	if($mail->send()){
 		echo json_encode(array(
 			"sent" => true,
-			"message" => "zajebiscie",
+			"message" => "Message sent successfully",
 			"name" => $name,
 			"email" => $email
 		));
