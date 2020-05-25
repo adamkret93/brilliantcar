@@ -77,6 +77,23 @@
         color: $goldColor;
     }
 }
+.input__error {
+    border-color: red !important;
+    position: relative;
+
+    &:after {
+        content: "Proszę podać adres email w odpowiedniej formie (np.: jan@email.pl)";
+        display: block;
+        width: 200px;
+        height: 100px;
+        padding: 5px;
+        background: #fff;
+        border-radius: 5px;
+        top: 0;
+        right: 0;
+        font-size: 12px;
+    }
+}
 .form__submit {
     padding: 15px 20px;
     background-color: #28a745;
@@ -89,5 +106,9 @@
 
     &:hover {
         background-color: #1e7b34;
+    }
+    &:disabled {
+        background-color: #1e7b34;
+        cursor: not-allowed;
     }
 }

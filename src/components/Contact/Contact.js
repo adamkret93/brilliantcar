@@ -4,17 +4,22 @@ import style from "./Contact.module.scss"
 import Location from '../../assets/images/location.svg'
 import Tel from '../../assets/images/tel.svg'
 import Email from '../../assets/images/email.svg'
+import Spinner from '../../components/Layout/Spinner/Spinner'
 
 const Contact = () => {
 const [name, setName] = useState('')
 const [email, setEmail] = useState('')
 const [message, setMessage] = useState('')
-const [submitForm, setSubmitForm] = useState(false)
-
+const [emailIsValid, setEmailIsValid] = useState(true);
+const [formIsValid, setFormIsValid] = useState(false);
+const [loading, setLoading] = useState(false);
+const [error, setError] = useState(false);
+const [messageSent, setMessageSent] = useState(false);
 
   const handleSubmit = async e => {
     e.preventDefault();
-    setSubmitForm(true);
+    //setMessageSent(true);
+    setLoading(true);
 
     try {
       let payload = {
@@ -35,32 +40,42 @@ const [submitForm, setSubmitForm] = useState(false)
 
       const answer = await response.json();
       console.log(answer);
-      alert(answer.message);
-      /* if (answer.success) {
-        alert(answer.message)
+      if (answer.success) {
+        setLoading(false);
+        setMessageSent(true);
+        setFormIsValid(false);
+        setEmailIsValid(true);
+      } else {
+        setLoading(false);
+        setError(true);
+        setFormIsValid(false);
+        setEmailIsValid(true);
       }
-      else {
-        alert(answer.errors[0].msg)
-      } */
     } catch (err) {
-        console.log(err);
-      //alert('Error connecting to backend:', err)
+      setLoading(false);
+      setError(true);
+      setFormIsValid(false);
+      setEmailIsValid(true);
     }
   }
 
   const handleNameChange = e => {
-    setName(e.currentTarget.value)
+    setName(e.currentTarget.value);
   }
 
   const handleEmailChange = e => {
-    setEmail(e.currentTarget.value)
+    const pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+    const isValid = pattern.test(e.currentTarget.value);
+    setEmailIsValid(isValid);
+    setFormIsValid(isValid);
+    setEmail(e.currentTarget.value);
   }
 
   const handleMessageChange = e => {
-    setMessage(e.currentTarget.value)
+    setMessage(e.currentTarget.value);
   }
 
-  const form = !submitForm ? (
+  let form = (
     <form onSubmit={handleSubmit}>
         <label className={`${style.form__label} ${style.form__labelName}`}>
           <p className={style.label__title}>Podaj imię:</p>
@@ -68,7 +83,7 @@ const [submitForm, setSubmitForm] = useState(false)
         </label>
         <label className={`${style.form__label} ${style.form__labelEmail}`}>
           <p className={style.label__title}>Podaj adres e-mail:<span>*</span></p>
-          <input placeholder='Adres e-mail' id='email' onChange={handleEmailChange} />
+          <input placeholder='Adres e-mail' id='email' onChange={handleEmailChange} className={`${!emailIsValid ? style.input__error : null }`}/>
         </label>
         <label className={style.form__label}>
           <p className={style.label__title}>Treść wiadomości:</p>
@@ -76,9 +91,14 @@ const [submitForm, setSubmitForm] = useState(false)
         </label>
         <label className={`${style.form__label} ${style.form__labelAgree}`}><input type='checkbox' id='agree'/>Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w Formularzu kontaktowym. Administratorem danych jest
           Brilliant Car Studio Detailingu Arkadiusz Widła, Michał Partyka s.c., ul. Jurajska 20, 32-085 Modlnica. Podane dane będa przetworzone w celu udzielenia odpowiedzi na przesłane zapytanie.</label>
-        <button type='submit' className={style.form__submit}>Wyślij</button>
+        <button type='submit' className={style.form__submit} disabled={!formIsValid}>Wyślij</button>
     </form>
-  ) : null;
+  );
+
+  if(loading) {
+    form = <Spinner/>;
+  }
+
   return (
     <>
         <div className={`${style.contact} container`}>
@@ -100,6 +120,7 @@ const [submitForm, setSubmitForm] = useState(false)
             </div>
             <div className={style.contact__form}>
                 <h3 className={style.form__title}>Formularz kontaktowy</h3>
+                {error ? <p> Cos poszło nie tak </p> : (messageSent ? <p>Dziękujemy, wiadomość została wysłana.</p> : null)} 
                 {form}            
             </div>
         </div>
