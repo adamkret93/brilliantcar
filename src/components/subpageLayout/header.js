@@ -4,7 +4,7 @@ import style from './header.module.scss'
 
 const Header = ({title, desc, side}) => {
     const titlePage = title.split(" ");
-    let titleText = null;
+    let titleText = '';
     
     if(titlePage.length > 1){
         titleText = titlePage.map((val, index) => {

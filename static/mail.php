@@ -16,7 +16,7 @@
 		$mail->addReplyTo($email);
 		$mail->isHTML(true);
 		$mail->Subject = 'Formularz kontaktowy - '.$name;
-		$mail->Body = 'Time Out - wiadomość z formularza kontaktowego <br><br> '
+		$mail->Body = 'Brilliant Car - wiadomość z formularza kontaktowego <br><br> '
 				. 'Imię i nazwisko: '.$name.'<br>'
 				. 'Adres e-mail: '.$email.'<br><br>'
 				. 'Wiadomość: <br>'.$content.' <br><br> --- KONIEC ---';
