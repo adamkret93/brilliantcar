@@ -5,12 +5,14 @@
     flex-wrap: wrap;
     margin-bottom: 50px;
 }
+.contact__info,.contact__form {
+    width: calc(50% - 10px);
+}
 .contact__info {
-    width: 50%;
     font-size: 18px;
+    margin-right: 20px;
 }
 .contact__form {
-    width: 50%;
     font-size: 16px;
 }
 .contact__name {
@@ -56,6 +58,7 @@
         border-radius: 5px;
         border: 2px solid transparent;
         outline: none;
+        max-width: 500px;
     }
     input:focus, textarea:focus {
         border-color: $goldColor;
@@ -111,5 +114,21 @@
     &:disabled {
         background-color: #1e7b34;
         cursor: not-allowed;
+    }
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 767px){
+    .contact__info,.contact__form {
+        width: 100%;
+    }
+    .contact__info {
+        margin: 0 0 40px;
+        font-size: 16px;
+    }
+    .contact__img {
+        min-width: 35px;
+        margin-right: 10px;
     }
 }
