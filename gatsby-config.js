@@ -43,6 +43,12 @@ module.exports = {
         icon: `src/assets/images/logo.svg`, // This path is relative to the root of the site.
       },
     },
+    /* {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: 'pixel id here',
+      },
+    }, */
     `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
