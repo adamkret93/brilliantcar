@@ -13,13 +13,13 @@ const IndexPage = ({ data }) => {
           W swojej ofercie posiadamy wachlarz usług, począwszy od <strong>detailingu zewnętrznego</strong>, przez <strong>detailing kompletny, aplikację wosku, 
           powłoki ceramicznej</strong> aż po <strong>aplikację folii ochronnej</strong>.  
       </>
-  )
+  );
 
   let services = {
     'Biezaca pielegnacja': [],
     'Renowacja i ochrona lakieru': [],
     'Pakiety': []
-  }
+  };
   edges.forEach(element => services[element.node.frontmatter.section] ? services[element.node.frontmatter.section].push(element): null);
   
   const servicesComponents = Object.keys(services)
