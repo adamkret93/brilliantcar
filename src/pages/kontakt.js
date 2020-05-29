@@ -5,13 +5,13 @@ import Header from "../components/subpageLayout/header"
 import SEO from "../components/seo"
 import Contact from '../components/Contact/Contact'
 
-const IndexPage = () => {
+const Kontakt = () => {
     const title = "Kontakt";
     const desc = (
         <>
             Jeżeli masz jakieś pytania, <strong>zadzwoń</strong> lub napisz bezpośrednio na <strong>adress e-mail</strong>, bądz poprzez <strong>formularz kontaktowy</strong> znajdujący sie poniżej.<br/> Chętnie rozwiejemy wszelkie wątpliwości.
         </>
-    )
+    );
 
     return(
       <Layout background={true} bgSide='left'>
@@ -22,4 +22,4 @@ const IndexPage = () => {
     )
   }
 
-export default IndexPage
+export default Kontakt
