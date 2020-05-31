@@ -59,12 +59,20 @@
         border: 2px solid transparent;
         outline: none;
         max-width: 500px;
+        margin-top: 5px;
+        display: block;
+    }
+    input[type=checkbox] {
+        display: inline-block;
     }
     input:focus, textarea:focus {
         border-color: $goldColor;
     }
+    span {
+        color: $goldColor;
+    }
 }
-.form__label--name input, .form__label--email input { 
+.form__label--email input { 
     width: 250px;
 }
 .form__label--agree {
@@ -72,30 +80,6 @@
 
     input {
         margin-right: 10px;
-    }
-}
-.label__title {
-    margin-bottom: 5px;
-    
-    span {
-        color: $goldColor;
-    }
-}
-.input__error {
-    border-color: red !important;
-    position: relative;
-
-    &:after {
-        content: "Proszę podać adres email w odpowiedniej formie (np.: jan@email.pl)";
-        display: block;
-        width: 200px;
-        height: 100px;
-        padding: 5px;
-        background: #fff;
-        border-radius: 5px;
-        top: 0;
-        right: 0;
-        font-size: 12px;
     }
 }
 .form__submit {

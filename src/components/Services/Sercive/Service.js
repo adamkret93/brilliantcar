@@ -34,7 +34,7 @@ const Service = ({title, price, descript}) => {
                 className="modal"
                 overlayClassName="overlay"
             >
-                <button className="closeModal" onClick={closeModal} title="Close (ESC)"></button>
+                <button className="closeModal" aria-label="close" onClick={closeModal} title="Close (ESC)"></button>
                 <h3 className={style.modal__title} dangerouslySetInnerHTML={{__html: title}}></h3>
                 <div dangerouslySetInnerHTML={{__html: descript}} className={style.modal__description}></div>
                 <p className={style.modal__price}>Cena: {price}</p>

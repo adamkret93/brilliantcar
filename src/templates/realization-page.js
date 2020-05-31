@@ -36,7 +36,7 @@ export default ({ data }) => {
     
     const galleryItems = sortGallery
         .filter((_, index) => index < 4)
-        .map((item, index) => <div key={index} className={`${style.gallery__item} ${style["gallery__item"+(index+1)]}`} role="button" tabIndex="0" onClick={() => openLightbox(index)} onKeyDown={() => openLightbox(0)}><Image fluid={item}/></div> );
+        .map((item, index) => <div key={index} className={`${style.gallery__item} ${style["gallery__item"+(index+1)]}`} role="button" aria-label={"gallery"+index} tabIndex="0" onClick={() => openLightbox(index)} onKeyDown={() => openLightbox(0)}><Image fluid={item}/></div> );
     
     return(
         <Layout background={true} bgSide='right'>

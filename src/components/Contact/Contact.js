@@ -110,14 +110,14 @@ const Contact = () => {
   let form = (
     <form onSubmit={handleSubmit}>
         <label className={`${style.form__label} ${style.form__labelEmail}`}>
-          <p className={style.label__title}>Podaj adres e-mail:<span>*</span></p>
-          <input placeholder='Adres e-mail' name='email' type='email' value={formData.email} onChange={updateField} />
+          Podaj adres e-mail:<span>*</span>
+          <input placeholder='Adres e-mail' name='email' aria-label="email" type="email" value={formData.email} onChange={updateField} />
         </label>
         <label className={style.form__label}>
-          <p className={style.label__title}>Treść wiadomości:</p>
-          <textarea placeholder='Treść wiadomości' name='message' value={formData.message} onChange={updateField} />
+          Treść wiadomości:
+          <textarea placeholder='Treść wiadomości' name='message' aria-label="message" value={formData.message} onChange={updateField} />
         </label>
-        <label className={`${style.form__label} ${style.form__labelAgree}`}><input type='checkbox' name='agree' checked={formData.agree} onChange={handleChangeAgree}/>Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w Formularzu kontaktowym. Administratorem danych jest
+        <label className={`${style.form__label} ${style.form__labelAgree}`}><input type="checkbox" name='agree' aria-label="agree" checked={formData.agree} onChange={handleChangeAgree}/>Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w Formularzu kontaktowym. Administratorem danych jest
           Brilliant Car Studio Detailingu Arkadiusz Widła, Michał Partyka s.c., ul. Jurajska 20, 32-085 Modlnica. Podane dane będa przetworzone w celu udzielenia odpowiedzi na przesłane zapytanie.</label>
         <button type='submit' className={style.form__submit}>Wyślij</button>
     </form>
