@@ -1,7 +1,7 @@
 ---
 date: "2020-04-07"
 name: "audi_a4_allroad" #name must be the same like folder name
-title: "Mercedes-Benz A200 w pakiecie AMG"
+title: "Audi A4 Allroad quattro"
 main_img: audi_a4_allroad_1.jpg
 ---
 
