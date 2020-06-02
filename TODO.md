@@ -1,1 +1,0 @@
-1. Main Banner jako functional component i użycie graphql
