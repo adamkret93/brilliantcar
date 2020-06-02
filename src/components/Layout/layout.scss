@@ -650,7 +650,23 @@ pre tt:after {
   width: 20px;
   height: 20px;
 }
-
+.call{
+  position: fixed;
+  display: block;
+  right: 0;
+  top: 25%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url(../../assets/images/tel.svg);
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 100;
+  font-size: 0;
+  border: 1px solid #FF9F00;
+}
 
 @media only screen and (max-width: 479px) {
   .modal {
@@ -658,9 +674,19 @@ pre tt:after {
     width: 90%;
   }
 }
-@media only screen and (min-width: 480px) and (max-width: 980px) {
+@media only screen and (min-width: 480px) and (max-width: 979px) {
   .modal {
     left: 10%;
     width: 80%;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .call {
+    top: unset;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    background-size: 30px;
   }
 }
