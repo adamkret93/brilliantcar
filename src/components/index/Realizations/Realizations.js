@@ -37,7 +37,7 @@ const Realizations = () => {
         }
       }
     }
-  `)
+  `) 
     return (
         <section className={style.realizations}>
             {/* <div className={style.realizations__hexagon}>

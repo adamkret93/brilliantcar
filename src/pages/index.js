@@ -30,7 +30,7 @@ const IndexPage = () => {
           }
         }
       }
-  `)
+  `) 
 
   return (
     <Layout>
