@@ -1,5 +1,5 @@
 {
-  "name": "brilliant-car",
+  "name": "brilliantcar",
   "private": true,
   "description": "Website",
   "version": "0.1.0",
@@ -48,6 +48,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adamkret93/brilliant-car"
+    "url": "https://github.com/adamkret93/brilliantcar"
   }
 }
