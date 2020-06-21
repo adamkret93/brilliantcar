@@ -30,7 +30,7 @@ const Layout = ({ background, bgSide, children }) => {
     <>
       <Navigation/>
       <div className='content'>
-        <a className="call" href="tel:+48 721 000 010">Zadzwoń do nas</a>
+        <a className="call" href="tel:+48 721 000 010" title="Zadzwoń do nas">Zadzwoń do nas</a>
         <main className={ background ? 'bg bg-'+bgSide : null}>{children}</main>
       </div>
       <footer className={style.footer}>
