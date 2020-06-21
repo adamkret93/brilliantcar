@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/brilliant-car",
+  pathPrefix: "/brilliantcar",
   siteMetadata: {
     title: `Brilliant Car`,
     description: `Brilliant Car - Studio Detailingu`,
