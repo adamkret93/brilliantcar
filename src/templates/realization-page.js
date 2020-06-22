@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import Carousel, { Modal, ModalGateway } from "react-images";
+import Carousel, { Modal, ModalGateway } from "react-images"
+import { graphql } from 'gatsby'
 import Image from "gatsby-image"
 import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
