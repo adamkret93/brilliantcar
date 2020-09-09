@@ -12,7 +12,7 @@ const Offer = () => (
                 <div className={style.offer__carIcon}></div>
                 <div className={style.offer__itemContent}>
                     <h3 className={style.offer__itemHeader}>Ochrona lakieru</h3>
-                    <p>W krótce więcej informacji...</p>
+                    <p>Wkrótce więcej informacji...</p>
                 </div>
                 <span className={style.offer__circle}></span>
             </div>
@@ -20,7 +20,7 @@ const Offer = () => (
                 <div className={style.offer__carIcon}></div>
                 <div className={style.offer__itemContent}>
                     <h3 className={style.offer__itemHeader}>Kosmetyka</h3>
-                    <p>W krótce więcej informacji...</p>
+                    <p>Wkrótce więcej informacji...</p>
                 </div>
                 <span className={style.offer__circle}></span>
             </div>
@@ -28,7 +28,7 @@ const Offer = () => (
                 <div className={style.offer__carIcon}></div>
                 <div className={style.offer__itemContent}>
                     <h3 className={style.offer__itemHeader}>Regeneracja</h3>
-                    <p>W krótce więcej informacji...</p>
+                    <p>Wkrótce więcej informacji...</p>
                 </div>
                 <span className={style.offer__circle}></span>
             </div>
@@ -36,7 +36,7 @@ const Offer = () => (
                 <div className={style.offer__carIcon}></div>
                 <div className={style.offer__itemContent}>
                     <h3 className={style.offer__itemHeader}>Design</h3>
-                    <p>W krótce więcej informacji...</p>
+                    <p>Wkrótce więcej informacji...</p>
                 </div>
                 <span className={style.offer__circle}></span>
             </div>

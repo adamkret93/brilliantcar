@@ -1,8 +1,8 @@
-
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import {Link} from 'gatsby'
+import CookieConsent from "react-cookie-consent";
 
 import Navigation from "./Navigation/navigation"
 import "./layout.scss"
@@ -58,12 +58,23 @@ const Layout = ({ background, bgSide, children }) => {
           <p className={style.hours}>Poniedziałek - Piątek 9:00 - 17:00</p>
           <div className={style.copyright}>
             <p className={style.copyright__paragraph}>{new Date().getFullYear()} © Wszystkie prawa zastrzeżone</p>
+            <p className={style.copyright__paragraph}><Link to='/pliki-cookies'>Pliki cookies</Link></p>
             <p className={style.copyright__paragraph}>Kopiowanie i wykorzystywanie zdjęć produktów bez zgody autora zabronione.<br/> 
               Strona korzysta z informacji przechowywanych w plikach cookies w celach funkcjonalnych oraz statystycznych.</p>
           </div>
           <p className={style.created}>Created by <a className={style.created__link} href={"mailto:"+data.site.siteMetadata.author_email}>{data.site.siteMetadata.author}</a></p>
         </div>
       </footer>
+      <CookieConsent
+        location="bottom"
+        cookieName="gatsby-gdpr-facebook-pixel"
+        buttonText="Akceptuj"
+        style={{ background: "#fff", color: "#141521", fontSize: "13px" }}
+        buttonStyle={{ background: "#141521", color: "#ff9f00", fontSize: "14px" }}
+        expires={150}
+      >
+        Strona korzysta z informacji przechowywanych w plikach cookies. Możesz określić warunki przechowywania lub dostępu mechanizmu cookie w Twojej przeglądarce.
+      </CookieConsent>
     </>
   )
 }

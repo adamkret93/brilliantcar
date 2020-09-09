@@ -39,7 +39,13 @@ footer {
     text-align: center;
     font-size: 12px;
 }
-.copyright__paragraph { margin-bottom: 20px; }
+.copyright__paragraph { 
+    margin-bottom: 20px;
+
+    a {
+        color: #fff;
+    }
+ }
 .created { margin-bottom: 0; }
 .created__link { color: #fff; }
 
