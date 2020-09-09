@@ -70,8 +70,8 @@ const Contact = () => {
       })
 
       const answer = await response.json();
-      console.log(answer);
-      if (answer.success) {
+      //console.log(answer);
+      if (answer.sent) {
         setLoading(false);
         setInfo({
           text: "Dziękujemy! Wiadomość została wysłana.",

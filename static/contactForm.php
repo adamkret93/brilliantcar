@@ -7,7 +7,7 @@ $_POST = json_decode($rest_json, true);
 
 
 
-if (empty($_POST['excerpt'])) {
+if (empty($_POST['email'])) {
 	http_response_code(200);
 	echo json_encode(
         [
@@ -20,24 +20,21 @@ if (empty($_POST['excerpt'])) {
 
 if ($_POST) {
 	http_response_code(200);
-	$name = htmlspecialchars($_POST['title']);
-	$email = htmlspecialchars($_POST['excerpt']);
-	$content = htmlspecialchars($_POST['text']);
-	//$content = nl2br($_POST['content']);
+	$email = htmlspecialchars($_POST['email']);
+	$content = nl2br($_POST['message']);
 
     require dirname(__FILE__).'/PHPMailer/PHPMailerAutoload.php';
 
 	$mail = new PHPMailer;
 	$mail->CharSet = 'UTF-8';
 	include(dirname(__FILE__).'ustawienia_wysylania_poczty.php');
-	$mail->From = $email;
+	//$mail->From = $email;
 	//$mail->FromName = $imie_nazwisko;
-	$mail->addAddress("krecik14@timeoutescape.pl"); //nasz email
+	$mail->addAddress("brilliantcarstudio@gmail.com"); //nasz email
 	$mail->addReplyTo($email);
 	$mail->isHTML(true);
-	$mail->Subject = 'Formularz kontaktowy - '.$name;
-	$mail->Body = 'Time Out - wiadomość z formularza kontaktowego <br><br> '
-			. 'Imię i nazwisko: '.$name.'<br>'
+	$mail->Subject = 'krakowdetailing.pl - Formularz kontaktowy';
+	$mail->Body = 'krakowdetailing.pl - wiadomość z formularza kontaktowego <br><br> '
 			. 'Adres e-mail: '.$email.'<br><br>'
 			. 'Wiadomość: <br>'.$content.' <br><br> --- KONIEC ---';
 	$mail->AltBody = strip_tags($mail->Body);
@@ -46,38 +43,13 @@ if ($_POST) {
 		echo json_encode(array(
 			"sent" => true,
 			"message" => "Message sent successfully",
-			"name" => $name,
 			"email" => $email
 		));
 	} else {
 		echo json_encode(["sent" => false, "message" => $mail->ErrorInfo.' '.$mail->Subject]);
-	}
-
-	// set response code - 200 OK
-
-	
-/* 	$subject = htmlspecialchars($_POST['poem']);
-	$to = "krecik1425@gmail.com";
-	$from = htmlspecialchars($_POST['excerpt']); */
-
-	// data
-
-/* 	$msg = $_POST['number'] . $_POST['message']; */
-
-	// Headers
-
-/* 	$headers = "MIME-Version: 1.0\r\n";
-	$headers.= "Content-type: text/html; charset=UTF-8\r\n";
-	$headers.= "From: <" . $from . ">";
-	mail($to, $subject, $msg, $headers); */
-
-	// echo json_encode( $_POST );
-
-	
+	}	
 } else {
-
 	// tell the user about error
-
 	echo json_encode(["sent" => false, "message" => "Something went wrong"]);
 }
 

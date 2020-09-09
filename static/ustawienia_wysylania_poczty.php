@@ -5,13 +5,13 @@ $mail->SMTPDebug = 0;
 $mail->isSMTP();
 
 //$mail->Debugoutput = 'html';
-$mail->Host = "mail.timeforit.pl";
+$mail->Host = "serwer2036855.home.pl";
 
 $mail->SMTPAuth = true;
-$mail->Username = "kreck14@timeforit.pl";
-$mail->Password = "TimeforIT31";
-$mail->SMTPSecure = "tls";//"ssl";456
-$mail->Port = "587";
+$mail->Username = "kontakt@krakowdetailing.pl";
+$mail->Password = "imApQN3d";
+$mail->SMTPSecure = "ssl";//"ssl";456
+$mail->Port = "465";
 $mail->smtpConnect([
     'ssl' => [
         'verify_peer' => false,
@@ -20,6 +20,6 @@ $mail->smtpConnect([
     ]
 ]);
 
-$mail->From = "kreck14@timeforit.pl";
+$mail->From = "kontakt@krakowdetailing.pl";
 
 ?>

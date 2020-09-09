@@ -1,8 +1,8 @@
 module.exports = {
   pathPrefix: "/brilliantcar",
   siteMetadata: {
-    title: `Brilliant Car`,
-    description: `Brilliant Car - Studio Detailingu`,
+    title: `Brilliant Car - Studio Detailingu | Kraków, Modlnica`,
+    description: `Brilliant Car - Studio Detailingu - w swojej ofercie posiadamy usługi z zakresu zabezpieczenia pojazdów powłokami ochronnymi oraz bezbarwnymi foliami, renowacji lakierów i ogólnej kosmetyki wnętrz pojazdów.`,
     author: `TimeForIT`,
     author_email: `adamkret93@gmail.com`
   },

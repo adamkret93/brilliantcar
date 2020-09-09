@@ -22,9 +22,9 @@ const IndexPage = () => {
   }
   const aboutUsImg = useStaticQuery(graphql`
     query {
-        placeholderImage: file(relativePath: { eq: "hand.png" }) {
+        placeholderImage: file(relativePath: { eq: "team.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 980) {
+            fluid(maxWidth: 980, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }

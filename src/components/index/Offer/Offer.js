@@ -12,12 +12,7 @@ const Offer = () => (
                 <div className={style.offer__carIcon}></div>
                 <div className={style.offer__itemContent}>
                     <h3 className={style.offer__itemHeader}>Ochrona lakieru</h3>
-                    <p>Ut dignissim ornare est, vitae ultricies lorem maximus ac. 
-                        Praesent scelerisque elit nec orci commodo pretium. 
-                        Suspendisse gravida aliquam risus, vel vestibulum neque 
-                        semper eu. Nulla ligula magna, sodales ut tortor in, 
-                        tincidunt mollis velit.
-                    </p>
+                    <p>W krótce więcej informacji...</p>
                 </div>
                 <span className={style.offer__circle}></span>
             </div>
@@ -25,12 +20,7 @@ const Offer = () => (
                 <div className={style.offer__carIcon}></div>
                 <div className={style.offer__itemContent}>
                     <h3 className={style.offer__itemHeader}>Kosmetyka</h3>
-                    <p>Ut dignissim ornare est, vitae ultricies lorem maximus ac. 
-                        Praesent scelerisque elit nec orci commodo pretium. 
-                        Suspendisse gravida aliquam risus, vel vestibulum neque 
-                        semper eu. Nulla ligula magna, sodales ut tortor in, 
-                        tincidunt mollis velit.
-                    </p>
+                    <p>W krótce więcej informacji...</p>
                 </div>
                 <span className={style.offer__circle}></span>
             </div>
@@ -38,12 +28,7 @@ const Offer = () => (
                 <div className={style.offer__carIcon}></div>
                 <div className={style.offer__itemContent}>
                     <h3 className={style.offer__itemHeader}>Regeneracja</h3>
-                    <p>Ut dignissim ornare est, vitae ultricies lorem maximus ac. 
-                        Praesent scelerisque elit nec orci commodo pretium. 
-                        Suspendisse gravida aliquam risus, vel vestibulum neque 
-                        semper eu. Nulla ligula magna, sodales ut tortor in, 
-                        tincidunt mollis velit.
-                    </p>
+                    <p>W krótce więcej informacji...</p>
                 </div>
                 <span className={style.offer__circle}></span>
             </div>
@@ -51,18 +36,13 @@ const Offer = () => (
                 <div className={style.offer__carIcon}></div>
                 <div className={style.offer__itemContent}>
                     <h3 className={style.offer__itemHeader}>Design</h3>
-                    <p>Ut dignissim ornare est, vitae ultricies lorem maximus ac. 
-                        Praesent scelerisque elit nec orci commodo pretium. 
-                        Suspendisse gravida aliquam risus, vel vestibulum neque 
-                        semper eu. Nulla ligula magna, sodales ut tortor in, 
-                        tincidunt mollis velit.
-                    </p>
+                    <p>W krótce więcej informacji...</p>
                 </div>
                 <span className={style.offer__circle}></span>
             </div>
         </div>
         <img className={style.offer__logo} src={Logo} alt="Logo"/>
-        <Link to='/uslugi' className={style.offer__link}>Sprawdź pełną ofertę</Link>
+        {/* <Link to='/uslugi' className={style.offer__link}>Sprawdź pełną ofertę</Link> */}
     </section>
 )
 
