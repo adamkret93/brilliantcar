@@ -100,13 +100,19 @@ module.exports = {
           dataLayerName: 'dataLayer', // default
         },
         facebookPixel: {
-          pixelId: '', // leave empty if you want to disable the tracker
+          pixelId: '3574028922627845', // leave empty if you want to disable the tracker
           cookieName: 'gatsby-gdpr-facebook-pixel', // default
         },
         // defines the environments where the tracking should be available  - default is ["production"]
         environments: ['production', 'development']
       },
     },
+    /* {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: '3574028922627845',
+      },
+    }, */
     `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

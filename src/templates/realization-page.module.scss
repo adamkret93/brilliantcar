@@ -100,6 +100,8 @@ $border: 3px solid $goldColor;
 .gallery__item--2, .gallery__item--3, .gallery__item--4 {
     border-right: 0;
     border-top: 0;
+    max-height: 142px;
+    overflow: hidden;
 } 
 .gallery__item--5 {
     display: flex;
