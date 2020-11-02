@@ -32,6 +32,7 @@
 .offer__item {
     position: relative;
     display: flex;
+    align-items: center;
     width: 100%;
 
     &:nth-child(odd){
@@ -119,14 +120,26 @@
 .offer__item--four{
     @include grid-item(4);
 }
-.offer__car-icon {
+.offer__icon {
     display: block;
     width: 155px;
     height: 155px;
-    background-image: url(../../../assets/images/car-check.svg);
+    
     background-position: center;
     background-repeat: no-repeat;
     margin-right: 30px;
+}
+.offer__icon--protect {
+    background-image: url(../../../assets/images/car-check.svg);
+}
+.offer__icon--wash {
+    background-image: url(../../../assets/images/car-wash.svg);
+}
+.offer__icon--polish {
+    background-image: url(../../../assets/images/polisher.svg);
+}
+.offer__icon--clean {
+    background-image: url(../../../assets/images/clean.svg);
 }
 .offer__item-content {
     flex: 1 1;
@@ -180,6 +193,7 @@
     .offer__item {
         grid-column: 1 / 3 !important;
         padding: 0 !important;
+        margin-bottom: 15px;
     }
     .offer__circle {
         display: none !important;
@@ -208,7 +222,7 @@
         flex-direction: column;
         align-items: center;
     } 
-    .offer__car-icon {
+    .offer__icon {
         margin: 0 0 20px 0;
         height: 115px;
         background-size: contain;

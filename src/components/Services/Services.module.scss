@@ -4,11 +4,14 @@ $border: 3px solid $goldColor;
 
 .services{
     margin-bottom: 50px;
-    background-position: 100% 50%;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
+    background-size: cover;
     header {
         text-align: center;
     }
+    border-bottom: 1px solid $goldColor;
+
 }
 .services--biezaca {
     background-image: url(../../assets/images/pielegnacja.jpg);
@@ -16,39 +19,56 @@ $border: 3px solid $goldColor;
 .services--renowacja{
     background-image: url(../../assets/images/renowacja.jpg);
 }
-.services--pakiety{
-    background-image: url(../../assets/images/pakiety.jpg);
+.services--kosmetyka{
+    background-image: url(../../assets/images/wnetrze.jpg);
+}
+.services--zabezpieczenie{
+    background-image: url(../../assets/images/zabezpieczenie.jpg);
+} 
+.services--bezbarwne{
+    background-image: url(../../assets/images/folie.jpg);
+}
+.services--inne{
+    background-image: url(../../assets/images/inne.jpg);
+    border-bottom: unset;
 }
 .services__header {
-    display: inline-block;
-    text-align: left;
-    font-size: 60px;
-    margin: 60px auto 115px;
-    padding: 0 20px;
-    position: relative;
+    margin-bottom: 115px;
 
-    &:before,
-    &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 70px;
-        height: 70px;
+    h2 {
+        display: inline-block;
+        text-align: left;
+        font-size: 60px;
+        padding: 10px 20px;
+        margin: 60px auto 40px;
+        position: relative;
+        background-color: rgba(0,0,0,0.3);
+
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 70px;
+            height: 70px;
+        }
+        &:before {
+            top: -1px;
+            left: -1px;
+            border-left: $border;
+            border-top: $border;
+        }
+        &:after {
+            bottom: -1px;
+            right: -1px;
+            border-right: $border;
+            border-bottom: $border;
+        }
     }
-    &:before {
-        top: -10px;
-        left: 0;
-        border-left: $border;
-        border-top: $border;
-    }
-    &:after {
-        bottom: -10px;
-        right: 0;
-        border-right: $border;
-        border-bottom: $border;
+    p {
+        font-size: 16px;
     }
 }
-
 .services__content {
     display: flex;
     flex-wrap: wrap;
@@ -66,33 +86,52 @@ $border: 3px solid $goldColor;
   }
 
 /*Media Queries*/
-@media only screen and (max-width: 479px){
-    
+@media only screen and (max-width: 479px){ 
     .services__header {
-        font-size: 40px;
-        width: 80%;
-        text-align: center;
+        margin: 0 auto 80px;
 
-        &:before,
-        &:after {
-            width: 50px;
-            height: 50px;
-        }
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            background-color: transparent;
+            &:before,
+            &:after {
+                width: 50px;
+                height: 50px;
+            }
+        }        
+    }
+    .services--biezaca,
+    .services--renowacja,
+    .services--kosmetyka,
+    .services--zabezpieczenie,
+    .services--bezbarwne,
+    .services--inne {
+        background-image: unset;
     }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px){
-    .services__header {
+    .services__header h2 {
         font-size: 40px;
     }
 }
 @media only screen and (max-width: 767px){
     .services--biezaca{
-        background-position: 80% 50%;
+        background-position: 86% 50%;
+    } 
+    .services--kosmetyka{
+        background-position: 64% 50%;
     } 
     .services--renowacja{
-        background-position: 88% 50%;
+        background-position: 43% 50%;
     } 
-    .services--pakiety{
+    .services--zabezpieczenie{
+        background-position: 78% 50%;
+    } 
+    .services--bezbarwne{
+        background-position: 50% 50%;
+    } 
+    .services--inne{
         background-position: 50% 50%;
     } 
     .services__content {
@@ -113,5 +152,10 @@ $border: 3px solid $goldColor;
 @media only screen and (max-width: 980px){
     .services{
         background-size: cover;
+    }    
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    .services{
+        background-position: 85% 50%;
     }    
 }

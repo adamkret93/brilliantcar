@@ -19,11 +19,13 @@ $border: 2px solid $goldColor;
     color: #333;
     cursor: pointer;
     outline-color: $goldColor;
-    transition: background-color 0.2s;
+    transition: all 0.2s;
 
     &:hover {
         background: rgba(255,255,255,1);
+        box-shadow: 0 0 30px 5px $goldColor;
     }
+
 }
 .service__title {
     font-size: 28px;
@@ -142,6 +144,17 @@ $border: 2px solid $goldColor;
 @media only screen and (max-width: 479px) {
     .service{
         width: 75%;
+
+        &::after {
+            display: block;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            content: "Poznaj szczegóły";
+            font-size: 12px;
+            font-weight: bold;
+            bottom: 15px;
+        }
     }
 }
 @media only screen and (max-width: 767px) {

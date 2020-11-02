@@ -18,8 +18,11 @@ const IndexPage = ({ data }) => {
 
   let services = {
     'Biezaca pielegnacja': [],
-    'Renowacja i ochrona lakieru': [],
-    'Pakiety': []
+    'Kosmetyka wnetrza': [],
+    'Renowacja lakieru': [],
+    'Zabezpieczenie lakieru - powloki ochronne': [],
+    'Bezbarwne folie ochronne': [],
+    'Inne': []
   };
   edges.forEach(element => services[element.node.frontmatter.section] ? services[element.node.frontmatter.section].push(element): null);
   

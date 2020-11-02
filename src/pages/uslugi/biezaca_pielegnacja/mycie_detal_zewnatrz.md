@@ -5,4 +5,4 @@ price: "80 PLN"
 order: 1
 ---
 
-Mycie felg, opon, wnęk. Nałożenie piany aktywnej o neutralnym pH, płukanie, mycie ręczne szamponem na dwa wiadra, osuszanie lakieru, wnęk, felg, usuwanie resztek wody sprężonym powietrzem, mycie szyb z zewnątrz, mycie i osuszenie gumowych dywaników, aplikacja quick detailera, nałożenie dressingu na opony.
+Podstawowa usługa obejmująca czyszczenie pojazdu z zewnątrz. W skład usługi wchodzi aplikacja piany aktywanej, bezpieczne mycie delikatnymi rękawicami oraz szamponem o neutralnym pH lakieru oraz felg, usunięcie resztek wody spręzonym powietrzem, mycie wnęk oraz nadkoli, aplikację quick detailera, aplikację dressingu na opony, mycie szyb z zewnątrz, mycie oraz osuszenie dywaników gumowych.
