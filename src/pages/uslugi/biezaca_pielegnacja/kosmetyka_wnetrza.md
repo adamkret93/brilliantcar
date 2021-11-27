@@ -1,7 +1,7 @@
 ---
 section: "Biezaca pielegnacja"
 title: "Kosmetyka wnętrza"
-price: "80 PLN"
+price: "120 PLN"
 order: 2
 ---
 

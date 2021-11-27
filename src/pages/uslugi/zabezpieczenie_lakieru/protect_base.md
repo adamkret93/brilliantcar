@@ -1,8 +1,8 @@
 ---
 section: "Zabezpieczenie lakieru - powloki ochronne"
 title: "Certyfikowana 2 składnikowa powłoka 5 letnia FX PROTECT B7 BASE + F5 FINISH"
-price: "2500 PLN"
-order: 3
+price: "* 3000 PLN"
+order: 4
 ---
 
 <p>Zestaw powłok ochronnych B7 BASE + F5 FINISH dostępny tylko dla certyfikowanych ekspertów, oferuje najbardziej zaawansowany poziom zabezpieczenia struktury lakierniczej przy wykorzystaniu innowacyjnej technologii. Dzięki unikalnej zawartości nanocząsteczek, powłoki ochronne naszej marki w znakomity sposób chronią lakier przed mikro zarysowaniami, promieniowaniem UV, szkodliwymi warunkami atmosferycznymi, a także przed destrukcyjnym działaniem agresywnej chemii.</p>

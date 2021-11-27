@@ -1,7 +1,7 @@
 ---
 section: "Biezaca pielegnacja"
-title: "Przegląd powłoki ceramicznej"
-price: "250 PLN"
+title: "Przegląd powłoki ceramicznej podstawowy"
+price: "300 PLN"
 order: 5
 ---
 

@@ -1,12 +1,12 @@
 ---
 section: "Inne"
 title: "Hydrofobizacja szyb"
-price: "50 PLN / 200 PLN"
+price: "100 PLN / 300 PLN"
 order: 2
 ---
 
 Hydrofobizacja szyb:
 <ul>
-    <li>czołowa: 50 PLN</li>
-    <li>kpl: 200 PLN</li>
+    <li>czołowa: 100 PLN</li>
+    <li>kpl: 300 PLN</li>
 </ul>

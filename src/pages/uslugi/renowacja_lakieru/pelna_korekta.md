@@ -1,7 +1,7 @@
 ---
 section: "Renowacja lakieru"
 title: "Pełna korekta lakieru"
-price: "1300 PLN"
+price: "1700 PLN"
 order: 3
 ---
 

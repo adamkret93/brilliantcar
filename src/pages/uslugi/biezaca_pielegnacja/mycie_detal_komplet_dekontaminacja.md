@@ -1,7 +1,7 @@
 ---
 section: "Biezaca pielegnacja"
 title: "Dekontaminacja lakieru"
-price: "200 PLN"
+price: "250 PLN"
 order: 4
 ---
 

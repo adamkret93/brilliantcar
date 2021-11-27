@@ -1,7 +1,7 @@
 ---
 section: "Inne"
 title: "Zabezpieczenie plastików zewnętrznych"
-price: "150 PLN"
+price: "200 PLN"
 order: 1
 ---
 

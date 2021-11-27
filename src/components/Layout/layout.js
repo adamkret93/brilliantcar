@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import {Link} from 'gatsby'
-import CookieConsent from "react-cookie-consent";
+import CookieConsent, { Cookies } from "react-cookie-consent";
 
 import Navigation from "./Navigation/navigation"
 import "./layout.scss"
@@ -67,11 +67,20 @@ const Layout = ({ background, bgSide, children }) => {
       </footer>
       <CookieConsent
         location="bottom"
-        cookieName="gatsby-gdpr-facebook-pixel"
+        //cookieName="gatsby-gdpr-google-analytics"
         buttonText="Akceptuj"
         style={{ background: "#fff", color: "#141521", fontSize: "13px" }}
         buttonStyle={{ background: "#141521", color: "#ff9f00", fontSize: "14px" }}
         expires={150}
+        onAccept={() => {
+          const options = { expires: 150, SameSite: 'strict' };
+          Cookies.set('gatsby-gdpr-google-analytics-legacy', 'true', options);
+          Cookies.set('gatsby-gdpr-google-analytics', 'true', options);
+          Cookies.set('gatsby-gdpr-google-tagmanager-legacy', 'true', options);
+          Cookies.set('gatsby-gdpr-google-tagmanager', 'true', options);
+          Cookies.set('gatsby-gdpr-facebook-pixel-legacy', 'true', options);
+          Cookies.set('gatsby-gdpr-facebook-pixel', 'true', options);
+        }}
       >
         Strona korzysta z informacji przechowywanych w plikach cookies. Możesz określić warunki przechowywania lub dostępu mechanizmu cookie w Twojej przeglądarce.
       </CookieConsent>

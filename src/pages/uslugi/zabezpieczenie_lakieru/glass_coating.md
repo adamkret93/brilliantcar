@@ -1,7 +1,7 @@
 ---
 section: "Zabezpieczenie lakieru - powloki ochronne"
-title: "Powłoka 2-3 letnia FX PROTECT GLASS COATING S-4H"
-price: "2000 PLN"
+title: "Powłoka 2 letnia FX PROTECT GLASS COATING S-4H"
+price: "* 2200 PLN"
 order: 2
 ---
 

@@ -1,8 +1,8 @@
 ---
 section: "Zabezpieczenie lakieru - powloki ochronne"
 title: "Certyfikowana powłoka 5 letnia o twardości 9H FX PROTECT HYPERNITY SH COATING"
-price: "3000 PLN"
-order: 4
+price: "* 3500 PLN"
+order: 5
 ---
 
 Najnowsza powłoka ceramiczna FX Protect dostępna tylko u certyfikowanych ekspertów.

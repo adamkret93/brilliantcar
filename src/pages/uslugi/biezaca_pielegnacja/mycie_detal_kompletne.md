@@ -1,7 +1,7 @@
 ---
 section: "Biezaca pielegnacja"
 title: "Mycie detailingowe kompletne"
-price: "150 PLN"
+price: "200 PLN"
 order: 3
 ---
 

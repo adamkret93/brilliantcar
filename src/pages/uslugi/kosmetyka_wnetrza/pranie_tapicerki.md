@@ -1,7 +1,7 @@
 ---
 section: "Kosmetyka wnetrza"
 title: "Pranie tapicerki"
-price: "od 250 PLN"
+price: "od 350 PLN"
 order: 1
 ---
 

@@ -1,7 +1,7 @@
 ---
 section: "Inne"
 title: "Zabezpieczenie felg dedykowana powłoką ceramiczną"
-price: "300 PLN"
+price: "od 400 PLN"
 order: 3
 ---
 

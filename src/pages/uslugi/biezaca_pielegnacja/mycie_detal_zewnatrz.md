@@ -1,7 +1,7 @@
 ---
 section: "Biezaca pielegnacja"
 title: "Mycie detailingowe z zewnątrz"
-price: "80 PLN"
+price: "120 PLN"
 order: 1
 ---
 
